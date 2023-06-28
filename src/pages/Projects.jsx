@@ -1,13 +1,9 @@
 /** @format */
 import data from "../data.json";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-const Projects = () => {
-	const variants = {
-		hidden: { opacity: 0, x: 0, y: 0 },
-		enter: { opacity: 1, x: 0, y: 0 },
-		exit: { opacity: 0, x: 0, y: 0 },
-	};
+const Projects = ({ variants }) => {
 	return (
 		<motion.div
 			variants={variants} // Pass the variant object into Framer Motion
@@ -44,5 +40,5 @@ const Projects = () => {
 		</motion.div>
 	);
 };
-
+Projects.propTypes = { variants: PropTypes.object };
 export default Projects;

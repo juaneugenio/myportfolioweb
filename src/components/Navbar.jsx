@@ -2,8 +2,6 @@
 
 import { Link } from "react-router-dom";
 
-/** @format */
-Link;
 function Navbar() {
 	return (
 		<nav className="menubar">

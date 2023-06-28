@@ -1,11 +1,8 @@
 /** @format */
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-function About() {
-	const variants = {
-		hidden: { opacity: 0, x: 0, y: 0 },
-		enter: { opacity: 1, x: 0, y: 0 },
-		exit: { opacity: 0, x: 0, y: 0 },
-	};
+
+function About({ variants }) {
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
@@ -29,5 +26,5 @@ function About() {
 		</motion.section>
 	);
 }
-
+About.propTypes = { variants: PropTypes.object.isRequired };
 export default About;

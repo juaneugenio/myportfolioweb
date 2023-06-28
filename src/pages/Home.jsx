@@ -1,11 +1,8 @@
 /** @format */
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-function Home() {
-	const variants = {
-		hidden: { opacity: 0, x: 0, y: 0 },
-		enter: { opacity: 1, x: 0, y: 0 },
-		exit: { opacity: 0, x: 0, y: 0 },
-	};
+
+function Home({ variants }) {
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
@@ -27,15 +24,9 @@ function Home() {
 				in repellendus assumenda ex cumque vel? Voluptas, eos recusandae! Labore dolores laborum dolore quod? Vel iure
 				accusamus similique voluptates ducimus libero possimus fugiat expedita odit temporibus commodi voluptate eum
 				pariatur, nihil et repudiandae. Nulla neque accusamus pariatur odio eligendi. Repudiandae, delectus! Eum
-				repudiandae fugit at rem hic voluptatibus atque asperiores tempora libero. Numquam iure facere, asperiores fugit
-				officia veritatis ipsam itaque laboriosam doloribus, ullam quas tenetur deleniti modi est. Quidem officia nobis
-				nemo dignissimos maxime, eos repellendus est nihil delectus corporis ut temporibus minus ab doloribus eligendi.
-				Recusandae reprehenderit est quos deleniti temporibus deserunt ducimus, inventore placeat consequatur omnis?
-				Corporis, velit. Ex saepe qui voluptatem reiciendis minima quisquam mollitia voluptas commodi temporibus eos
-				facilis facere non nesciunt aliquid, natus a cumque molestiae reprehenderit veniam cupiditate corporis,
 			</p>
 		</motion.section>
 	);
 }
-
+Home.propTypes = { variants: PropTypes.object };
 export default Home;

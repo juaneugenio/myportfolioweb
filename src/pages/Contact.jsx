@@ -1,12 +1,9 @@
 /** @format */
 import { useState } from "react";
 import { motion } from "framer-motion";
-const variants = {
-	hidden: { opacity: 0, x: 0, y: 0 },
-	enter: { opacity: 1, x: 0, y: 0 },
-	exit: { opacity: 0, x: 0, y: 0 },
-};
-function Contact() {
+import PropTypes from "prop-types";
+
+function Contact({ variants }) {
 	const [formStatus, setFormStatus] = useState("Send");
 	const onSubmit = (e) => {
 		e.preventDefault();
@@ -48,5 +45,7 @@ function Contact() {
 		</motion.section>
 	);
 }
-
+Contact.propTypes = {
+	variants: PropTypes.object,
+};
 export default Contact;
