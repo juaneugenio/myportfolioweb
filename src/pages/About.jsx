@@ -1,8 +1,19 @@
 /** @format */
-
+import { motion } from "framer-motion";
 function About() {
+	const variants = {
+		hidden: { opacity: 0, x: 0, y: 0 },
+		enter: { opacity: 1, x: 0, y: 0 },
+		exit: { opacity: 0, x: 0, y: 0 },
+	};
 	return (
-		<section>
+		<motion.section
+			variants={variants} // Pass the variant object into Framer Motion
+			initial="hidden" // Set the initial state to variants.hidden
+			animate="enter" // Animated state to variants.enter
+			exit="exit" // Exit state (used later) to variants.exit
+			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
+		>
 			<h2>About me</h2>
 			<p>
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque nobis maxime asperiores magnam repellat
@@ -15,7 +26,7 @@ function About() {
 				quos amet! Corporis hic esse consectetur magni tempore id reprehenderit. Ipsum incidunt autem fugit
 				exercitationem fugiat!
 			</p>
-		</section>
+		</motion.section>
 	);
 }
 

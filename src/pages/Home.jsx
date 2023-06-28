@@ -1,8 +1,19 @@
 /** @format */
-
+import { motion } from "framer-motion";
 function Home() {
+	const variants = {
+		hidden: { opacity: 0, x: 0, y: 0 },
+		enter: { opacity: 1, x: 0, y: 0 },
+		exit: { opacity: 0, x: 0, y: 0 },
+	};
 	return (
-		<section>
+		<motion.section
+			variants={variants} // Pass the variant object into Framer Motion
+			initial="hidden" // Set the initial state to variants.hidden
+			animate="enter" // Animated state to variants.enter
+			exit="exit" // Exit state (used later) to variants.exit
+			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
+		>
 			<h2>Welcome</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestiae quam consequuntur eum, doloremque
@@ -22,13 +33,8 @@ function Home() {
 				Recusandae reprehenderit est quos deleniti temporibus deserunt ducimus, inventore placeat consequatur omnis?
 				Corporis, velit. Ex saepe qui voluptatem reiciendis minima quisquam mollitia voluptas commodi temporibus eos
 				facilis facere non nesciunt aliquid, natus a cumque molestiae reprehenderit veniam cupiditate corporis,
-				consectetur ducimus animi! Dolorum, inventore. Eaque, impedit pariatur, dolores doloribus consequatur beatae
-				quibusdam commodi consectetur modi odit animi ea mollitia earum soluta quasi sunt illum! Eius ad quia nisi
-				voluptatem? Impedit, ea cum? Corporis unde laudantium voluptates illo animi vero aut earum veniam id ullam quae
-				quidem odio, reprehenderit repudiandae molestias ex? Suscipit deserunt ullam praesentium. Eos vel aliquam dolor
-				perferendis repudiandae inventore? Amet ut, sunt corporis magnam nobis molestiae hic voluptatum repellat?
 			</p>
-		</section>
+		</motion.section>
 	);
 }
 
