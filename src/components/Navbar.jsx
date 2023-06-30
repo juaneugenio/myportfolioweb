@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
 	return (
 		<nav className="menubar">
+			<img className="nav-picture" src="src/assets/profile-pic.png" alt="profile picture" />
 			<Link to="/" className="menulink">
 				home
 			</Link>
