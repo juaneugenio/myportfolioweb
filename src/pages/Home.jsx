@@ -11,20 +11,31 @@ function Home({ variants }) {
 			exit="exit" // Exit state (used later) to variants.exit
 			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
 		>
-			<h2>Welcome</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestiae quam consequuntur eum, doloremque
-				ducimus exercitationem dolore, voluptatum assumenda inventore veniam eos illo quibusdam provident animi dolorem
-				maxime laudantium ut! Consequuntur quis ratione maxime amet, modi voluptas beatae, asperiores rem, ipsam aperiam
-				minima aut soluta inventore corporis exercitationem ut consectetur? Laborum eveniet exercitationem aspernatur
-				ullam fuga neque error consectetur illo! Tempora voluptates minus quia quos in repudiandae eligendi sunt,
-				tenetur natus? Quidem aperiam repellat eligendi, quam dolores a exercitationem blanditiis atque praesentium
-				sequi hic ab nobis reiciendis itaque. Obcaecati, blanditiis. Ad iste maxime nesciunt. Explicabo quisquam eos
-				laudantium alias esse a itaque laborum quis similique consequatur, impedit, magnam voluptatum, natus recusandae
-				in repellendus assumenda ex cumque vel? Voluptas, eos recusandae! Labore dolores laborum dolore quod? Vel iure
-				accusamus similique voluptates ducimus libero possimus fugiat expedita odit temporibus commodi voluptate eum
-				pariatur, nihil et repudiandae. Nulla neque accusamus pariatur odio eligendi. Repudiandae, delectus! Eum
-			</p>
+			<blockquote className="quote">
+				<q>Debugging the present to develop the future</q>
+			</blockquote>
+			<div className="home-content">
+				<p>
+					👋🏼 Hi there and welcome to my Web Portfolio! My name is <strong>Juan</strong> , and it is a pleasure to have
+					you here. Allow me to share my passion for web development with you.
+				</p>
+				<p>
+					My journey in this field began in 2021 as a developer specializing in the MERN stack. Since then, I have been
+					consistently working on front and back end projects to enhance my technical skills, including JavaScript,
+					React, Restful APIs, and more. Please, Feel free to explore my projects to gain a better understanding of my
+					work.
+				</p>
+				<p>
+					However, being a proficient professional goes beyond technical expertise. Drawing from my experience as a
+					Spanish teacher, I have come to realize that interpersonal skills are equally vital. These skills allow
+					individuals to stand out as more than just average workers and transform into reliable collaborators.
+				</p>
+				<p>
+					Currently, I am in the process of transitioning my career to web development because I genuinely love it. I am
+					thrilled about the prospect of joining a team of colleagues who can help me grow not only as a developer but
+					also as a professional. The opportunity to evolve alongside them is truly exciting to me.
+				</p>
+			</div>
 		</motion.section>
 	);
 }

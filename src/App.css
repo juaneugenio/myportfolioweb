@@ -1,7 +1,8 @@
 /** @format */
 :root {
 	--bg-color: #30292f;
-	--txt-color: #daddd8;
+	/* --txt-color: #daddd8; */
+	--txt-color: #d2d2d2;
 	/* --head-color: #e98a15; */
 	--head-color: #f0a202;
 }
@@ -93,7 +94,22 @@ h3 {
 		border: none;
 	}
 }
-
+/* HOME CONTENT */
+/* Blockquote */
+.quote {
+	font-size: 2.5em;
+	font-weight: 900;
+	text-align: center;
+}
+.quote q {
+	background: -webkit-linear-gradient(90deg, #676464, #ffffff);
+	background-clip: content-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.home-content strong {
+	color: var(--head-color);
+}
 @media screen and (max-width: 400px) {
 	.menubar {
 		width: 100%;
