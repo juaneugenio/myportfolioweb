@@ -1,8 +1,21 @@
 /** @format */
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import { Timeline, Events, Event } from "vertical-timeline-component-react";
+import about from "../dataAbout";
+console.log("👉 Line-6 ▶︎▶︎", about);
 
 function About({ variants }) {
+	const customTheme = {
+		borderDotColor: "#f0a202",
+		descriptionColor: "#a9a8a8",
+		dotColor: "#30292f",
+		eventColor: "#a9a8a8",
+		lineColor: "#f0a202",
+		subtitleColor: "#a9a8a8",
+		titleColor: "#f0a202",
+		yearColor: "#a9a8a8",
+	};
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
@@ -13,16 +26,28 @@ function About({ variants }) {
 		>
 			<h2>About me</h2>
 			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque nobis maxime asperiores magnam repellat
-				quae, nisi nemo explicabo placeat ea, alias, sed quasi. Consequuntur ducimus dolorem harum accusantium dolorum.
-				Perferendis, eius et amet aperiam atque eaque nesciunt accusamus at in iure, dolorum qui reprehenderit sapiente
-				possimus, illo molestias debitis officiis. Molestias commodi explicabo dolore earum pariatur, non ea optio?
-				Fugiat, ipsa obcaecati vel quo consequuntur libero ipsum similique, iure in cumque qui voluptatum illo sunt
-				neque veritatis odit laboriosam totam, repellendus provident. Rem omnis placeat enim ipsum unde id? Perspiciatis
-				dolor repellat quibusdam dolorum cupiditate. Dolor, accusamus. Eius beatae alias officiis cumque. Blanditiis,
-				quos amet! Corporis hic esse consectetur magni tempore id reprehenderit. Ipsum incidunt autem fugit
-				exercitationem fugiat!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique placeat, ab quas odit excepturi culpa
+				laboriosam aspernatur ea deserunt? Illum, a possimus nemo dolorum necessitatibus esse reiciendis natus placeat!
+				Debitis, accusamus fuga, dolorum maxime quis veritatis officiis praesentium corrupti, quo asperiores
 			</p>
+
+			<Timeline lang="en" theme={customTheme} dateFormat="only-number" collapse withoutDay>
+				{about.map((institut) => {
+					console.log("👉 Line-37 ▶︎▶︎", typeof endDate);
+					return (
+						<Events
+							title={institut.institution}
+							subtitle={institut.role.toUpperCase()}
+							startDate={institut.startDate}
+							endDate={institut.endDate}
+							defaultClosed
+							key={institut.id}
+						>
+							<Event title={institut.taskTitle} description={institut.tasks} />
+						</Events>
+					);
+				})}
+			</Timeline>
 		</motion.section>
 	);
 }
