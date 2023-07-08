@@ -65,6 +65,7 @@ const items = [
 		endDate: "2006/11",
 		taskTitle: "Note: 1.5",
 		tasks: ["Officially validated as B.A. Degree"],
+		active: "true",
 	},
 	{
 		id: "00",
