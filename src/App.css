@@ -80,7 +80,6 @@ h3 {
 
 /* HOME CONTENT */
 /* Blockquote */
-/* see to clamp text */
 .quote {
 	font-size: clamp(1.875rem, 1.818vw + 1.42rem, 2.875rem);
 	line-height: clamp(2.438rem, 2.886vw + 1.716rem, 4.025rem);
@@ -90,6 +89,21 @@ h3 {
 .quote strong {
 	color: var(--head-color);
 }
+
+/* PROJECTS PAGE */
+/* Grid container */
+.parent-container {
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 10px 10px;
+	grid-template-areas: ". .";
+	justify-items: center;
+	align-items: baseline;
+}
+
 @media screen and (max-width: 700px) {
 	.menubar {
 		width: 100%;

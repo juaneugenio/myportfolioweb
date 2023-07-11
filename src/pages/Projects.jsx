@@ -20,10 +20,11 @@ const Projects = ({ variants }) => {
 					similique placeat culpa accusantium eveniet. Modi, ipsum quod. Fugtis quisquam? Aliquam
 				</p>
 			</section>
-			<section>
+			<section className="parent-container">
 				{data.user.projects.map((proj) => {
 					return (
 						<ul key={proj.id}>
+							<img src={proj.img} alt="LALALA" style={{ width: 180 }} />
 							<li>{proj.name}</li>
 							<li>{proj.year}</li>
 							<div>

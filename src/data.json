@@ -7,6 +7,7 @@
 			{
 				"id": "01",
 				"name": "Bl.anty Blog",
+				"img": "url(./assets/profile-pic.png)",
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://blanty.netlify.app/",
@@ -26,11 +27,32 @@
 			{
 				"id": "02",
 				"name": "Cluedo Game",
+				"img": "url(./assets/profile-pic.png)",
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://cluedojs-play.netlify.app/",
 				"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur omnis laborum, ut temporibus rerum magnam culpa sunt harum adipisci minima doloremque. Natus necessitatibus nihil exercitationem enim accusamus non omnis vero consequatur adipisci itaque possimus, quae ipsa ad alias aperiam, id quibusdam illum. Quo, sed. Fugit magni quo dolor cumque perferendis.",
 				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design"]
+			},
+			{
+				"id": "03",
+				"name": "Bl.anty Blog",
+				"img": "./assets/profile-pic.png",
+				"year": "2023",
+				"devs": ["eugenio"],
+				"url": "url(./assets/profile-pic.png)",
+				"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur omnis laborum, ut temporibus rerum magnam culpa sunt harum adipisci minima doloremque. Natus necessitatibus nihil exercitationem enim accusamus non omnis vero consequatur adipisci itaque possimus, quae ipsa ad alias aperiam, id quibusdam illum. Quo, sed. Fugit magni quo dolor cumque perferendis.",
+				"techs": [
+					"ReactJS",
+					"JavaScript",
+					"CSS3",
+					"HTML5",
+					"MongoDB",
+					"ExpressJS",
+					"MVC Architecture",
+					"NodeJS",
+					"Responsive Design"
+				]
 			}
 		]
 	}

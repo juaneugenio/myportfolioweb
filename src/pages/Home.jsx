@@ -25,7 +25,7 @@ function Home({ variants }) {
 				<p>
 					But technical knowledge alone is not enough, is it? During my career as a Spanish teacher, I developed the
 					ability to listen carefully to the learning needs of my students and to offer effective solutions to the
-					challenges they face in their learning process. I am confident that the combination of my technical and
+					challenges they face in their learning process. <br /> I am confident that the combination of my technical and
 					interpersonal skills will help me to work effectively with both clients and development teams.
 				</p>
 				<p>
