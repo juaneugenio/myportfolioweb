@@ -2,6 +2,7 @@
 import data from "../data.json";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
+console.log("👉 Line-5 ▶︎▶︎", data.user.projects);
 
 const Projects = ({ variants }) => {
 	return (
@@ -23,15 +24,15 @@ const Projects = ({ variants }) => {
 			<section className="parent-container">
 				{data.user.projects.map((proj) => {
 					return (
-						<ul key={proj.id}>
-							<img src={proj.img} alt="LALALA" style={{ width: 180 }} />
+						<ul key={proj.id} className="card-container">
+							<img src={proj.img} alt={`${proj.name}'s screenshot `} style={{ width: "3em" }} />
 							<li>{proj.name}</li>
 							<li>{proj.year}</li>
 							<div>
 								{proj.techs.map((tech) => (
-									<p key={tech} style={{ display: "inline-block" }}>
+									<span key={tech} style={{ display: "inline-block" }}>
 										{tech}
-									</p>
+									</span>
 								))}
 							</div>
 						</ul>

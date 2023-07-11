@@ -7,13 +7,13 @@ console.log("👉 Line-6 ▶︎▶︎", about);
 
 function About({ variants }) {
 	const customTheme = {
-		borderDotColor: "#f0a202",
+		borderDotColor: "#fd7e14",
 		descriptionColor: "#a9a8a8",
 		dotColor: "#30292f",
 		eventColor: "#a9a8a8",
-		lineColor: "#f0a202",
+		lineColor: "#fd7e14",
 		subtitleColor: "#a9a8a8",
-		titleColor: "#f0a202",
+		titleColor: "#fd7e14",
 		yearColor: "#a9a8a8",
 	};
 	return (
