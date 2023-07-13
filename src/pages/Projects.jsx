@@ -2,11 +2,12 @@
 import data from "../data.json";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
-console.log("👉 Line-5 ▶︎▶︎", data.user.projects);
+import { ImArrowUpRight2 } from "react-icons/im";
 
 const Projects = ({ variants }) => {
 	return (
 		<motion.div
+			className="projects-container"
 			variants={variants} // Pass the variant object into Framer Motion
 			initial="hidden" // Set the initial state to variants.hidden
 			animate="enter" // Animated state to variants.enter
@@ -21,16 +22,30 @@ const Projects = ({ variants }) => {
 					similique placeat culpa accusantium eveniet. Modi, ipsum quod. Fugtis quisquam? Aliquam
 				</p>
 			</section>
-			<section className="parent-container">
+			<section className="projects-section-container">
 				{data.user.projects.map((proj) => {
 					return (
 						<ul key={proj.id} className="card-container">
-							<img src={proj.img} alt={`${proj.name}'s screenshot `} style={{ width: "3em" }} />
-							<li>{proj.name}</li>
-							<li>{proj.year}</li>
+							{/* <img src={proj.img} alt={`${proj.name}'s screenshot `} style={{ width: "3em" }} /> */}
+							<a href={proj.url} target="_blank">
+								<motion.h3
+									whileHover={{ scale: 1.1 }}
+									whileTap={{ scale: 0.9 }}
+									transition={{ type: "spring", stiffness: 500, damping: 5 }}
+								>
+									{proj.name}{" "}
+									<i>
+										<ImArrowUpRight2 />
+									</i>
+								</motion.h3>
+							</a>
+							<p className="subtitle">
+								{proj.type} Project - {proj.year}
+							</p>
+							<p className="proj-description">{proj.description}</p>
 							<div>
 								{proj.techs.map((tech) => (
-									<span key={tech} style={{ display: "inline-block" }}>
+									<span className="tag" key={tech}>
 										{tech}
 									</span>
 								))}
