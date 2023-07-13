@@ -11,6 +11,7 @@
 }
 
 body {
+	/* position: relative; */
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -32,6 +33,9 @@ h3 {
 	color: var(--head-color);
 }
 .app-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	max-width: 960px;
 	margin: 0 auto;
 	/* padding: 20px; */
@@ -70,14 +74,12 @@ h3 {
 /* SINGLE PAGES BODY */
 .content {
 	/* border-left: 1px solid #f0a202; */
-
 	border-width: 1px;
 	border-style: solid;
 	border-image: linear-gradient(#30292f, var(--head-color), #30292f) 1 0 0 1;
 	margin-left: 200px;
 	margin-bottom: 3rem;
-	padding: 1px 16px;
-	height: auto;
+	padding: 1px 0.7rem;
 }
 
 /* HOME CONTENT */
@@ -97,18 +99,81 @@ h3 {
 .parent-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-	gap: 10px;
-	justify-content: space-evenly;
+	column-gap: 0.7rem;
+	justify-content: flex-start;
 }
 .card-container {
 	list-style: none;
-	font-size: 1rem;
+	font-size: 0.95rem;
 	background-color: var(--card-color);
 	border-radius: 7px;
 	padding: 1rem;
 	line-height: 130%;
 }
 
+/* ------CONTACT PAGE-------- */
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.contact-container ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 3rem 0;
+	padding: 0;
+	/* border: 1px solid yellow; */
+}
+
+.contact-container ul li {
+	font-size: 3rem;
+	margin: 0.5rem;
+}
+.contact-container ul li a {
+	color: var(--head-color);
+	text-decoration: none;
+}
+.contact-container ul li a span {
+	font-size: 1rem;
+}
+/* ------FOOTER section-------- */
+.footer {
+	font-size: 0.9rem;
+	line-height: 0.6rem;
+	margin-top: 1rem;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted var(--head-color);
+	color: var(--head-color);
+	cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 12rem;
+	background-color: black;
+	color: var(--head-color);
+	text-align: center;
+	border-radius: 6px;
+	padding: 0.7rem;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	left: -4rem;
+	top: -2.5rem;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+/* RESPONSIVE SECTION */
 @media screen and (max-width: 700px) {
 	.menubar {
 		width: 100%;
@@ -130,10 +195,9 @@ h3 {
 	.content {
 		margin-left: 0;
 		border: none;
-		text-align: justify;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
 	.menubar {
 		width: 100%;
 		display: block;
@@ -141,5 +205,8 @@ h3 {
 	.menulink {
 		text-align: center;
 		float: none;
+	}
+	.content {
+		text-align: center;
 	}
 }

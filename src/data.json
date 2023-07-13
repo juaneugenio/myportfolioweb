@@ -3,6 +3,26 @@
 		"firstName": "Juan",
 		"lastName": "Eugenio",
 		"birthday": "Fri, 24 Jun 1977 00:00:00 UTC",
+		"contacts": [
+			{
+				"id": "01",
+				"name": "LinkedIn",
+				"url": "https://www.linkedin.com/in/eugeniojuan/",
+				"icon": "ImLinkedin"
+			},
+			{
+				"id": "02",
+				"name": "Gmail",
+				"url": "mailto:leuviah77@gmail.com",
+				"icon": "ImMail4"
+			},
+			{
+				"id": "03",
+				"name": "Github",
+				"url": "https://github.com/juaneugenio",
+				"icon": "ImGithub"
+			}
+		],
 		"projects": [
 			{
 				"id": "01",

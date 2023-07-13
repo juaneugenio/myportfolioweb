@@ -1,21 +1,13 @@
 /** @format */
-import { useState } from "react";
+// For the icons i used React Icons IcoMoon Free -> https://react-icons.github.io/react-icons/icons?name=im. And i passed the same "Name declarations" in the file: data.json.
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
+import data from "../data.json";
+
+import { ImGithub, ImMail4, ImLinkedin } from "react-icons/im";
 
 function Contact({ variants }) {
-	const [formStatus, setFormStatus] = useState("Send");
-	const onSubmit = (e) => {
-		e.preventDefault();
-		setFormStatus("Submitting...");
-		const { name, email, message } = e.target.elements;
-		let conFom = {
-			name: name.value,
-			email: email.value,
-			message: message.value,
-		};
-		console.log(conFom);
-	};
+	const year = new Date().getFullYear();
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
@@ -25,23 +17,80 @@ function Contact({ variants }) {
 			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
 		>
 			<h2>Contact</h2>
-			<p>Email</p>
-			<a href="mailto: leuviah77@gmail.com">Send Email</a>
-			<form onSubmit={onSubmit}>
-				<div>
-					<label htmlFor="name">Name</label>
-					<input type="text" id="name" required />
+			<div className="contact-container">
+				<div className="contact-header">
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque expedita magnam officiis sapiente cum
+						debitis
+					</p>
 				</div>
-				<div>
-					<label htmlFor="email">Email</label>
-					<input type="email" id="email" required />
+
+				<ul>
+					{data.user.contacts.map((contact) => {
+						switch (contact.icon) {
+							case "ImLinkedin":
+								return (
+									<motion.li
+										key={contact.id}
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
+										transition={{ type: "spring", stiffness: 500, damping: 5 }}
+									>
+										<a className="linkedin" href={contact.url} target="_blank">
+											<ImLinkedin /> <br />
+											<span>{contact.name}</span>
+										</a>
+									</motion.li>
+								);
+								break;
+							case "ImMail4":
+								return (
+									<motion.li
+										key={contact.id}
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
+										transition={{ type: "spring", stiffness: 500, damping: 5 }}
+									>
+										<a className="gmail" href={contact.url}>
+											<ImMail4 />
+											<br />
+											<span>{contact.name}</span>
+										</a>
+									</motion.li>
+								);
+								break;
+							case "ImGithub":
+								return (
+									<motion.li
+										key={contact.id}
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
+										transition={{ type: "spring", stiffness: 500, damping: 5 }}
+									>
+										<a className="github" href={contact.url} target="_blank">
+											<ImGithub />
+											<br />
+											<span>{contact.name}</span>
+										</a>
+									</motion.li>
+								);
+								break;
+
+							default:
+								break;
+						}
+					})}
+				</ul>
+				<div className="footer">
+					<h4>
+						Made by{" "}
+						<span className="tooltip">
+							EUGENIO<span className="tooltiptext">The developer of this Site</span>
+						</span>
+					</h4>
+					<p> COPYRIGHT ⓒ 2023 - {year}</p>
 				</div>
-				<div>
-					<label htmlFor="message">Message</label>
-					<textarea id="message" required />
-				</div>
-				<button type="submit">{formStatus}</button>
-			</form>
+			</div>
 		</motion.section>
 	);
 }
