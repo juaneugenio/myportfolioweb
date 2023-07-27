@@ -17,9 +17,8 @@ const Projects = ({ variants }) => {
 			<section>
 				<h2>My Projects</h2>
 				<p>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur voluptatem assumenda qui optio eos
-					nobis libero, perspiciatis eius temporibus illo quis incidunt unde veli sint odit maxime aut recusandae
-					similique placeat culpa accusantium eveniet. Modi, ipsum quod. Fugtis quisquam? Aliquam
+					Through my personal projects, I try to follow principles and best practices to build modular, scalable and
+					maintainable solutions like DRY, SOC and KISS.
 				</p>
 			</section>
 			<section className="projects-section-container">
@@ -33,7 +32,7 @@ const Projects = ({ variants }) => {
 									whileTap={{ scale: 0.9 }}
 									transition={{ type: "spring", stiffness: 500, damping: 5 }}
 								>
-									{proj.name}{" "}
+									{proj.name}
 									<i>
 										<ImArrowUpRight2 />
 									</i>
