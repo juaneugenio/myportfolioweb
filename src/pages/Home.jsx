@@ -30,9 +30,7 @@ function Home({ variants }) {
 				</p>
 				<p>
 					My immediate goal as a career move is to secure a full-time position in web development, ideally within a
-					dynamic team that appreciates my communication, analytical and problem-solving skills. <br />
-					If you are interested, please do not hesitate to contact me to provide you with more information on how my
-					qualifications can have a valuable impact on your organisation.
+					dynamic team that appreciates my communication, analytical and problem-solving skills.
 				</p>
 			</div>
 		</motion.section>

@@ -32,6 +32,9 @@ h3 {
 	padding-bottom: 0.5em;
 	color: var(--head-color);
 }
+strong {
+	color: var(--head-color);
+}
 .app-container {
 	display: flex;
 	flex-direction: column;

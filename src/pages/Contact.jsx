@@ -20,8 +20,8 @@ function Contact({ variants }) {
 			<div className="contact-container">
 				<div className="contact-header">
 					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque expedita magnam officiis sapiente cum
-						debitis
+						If you are interested, please do not hesitate to contact me to provide you with more information on how my
+						qualifications can have a valuable impact on your organisation.
 					</p>
 				</div>
 
