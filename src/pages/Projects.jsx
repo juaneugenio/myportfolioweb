@@ -18,7 +18,15 @@ const Projects = ({ variants }) => {
 				<h2>My Projects</h2>
 				<p>
 					Through my personal projects, I try to follow principles and best practices to build modular, scalable and
-					maintainable solutions like DRY, SOC and KISS.
+					maintainable solutions like Single Responsability ,{" "}
+					<span className="tooltip">
+						DRY<span className="tooltiptext">Don't Repeat Yourself</span>
+					</span>{" "}
+					and{" "}
+					<span className="tooltip">
+						KISS<span className="tooltiptext">Keep It Simple, Silly</span>
+					</span>
+					.
 				</p>
 			</section>
 			<section className="projects-section-container">

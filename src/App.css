@@ -208,6 +208,7 @@ strong {
 
 .tooltip:hover .tooltiptext {
 	visibility: visible;
+	font-size: 0.9rem;
 }
 /* RESPONSIVE SECTION */
 @media screen and (max-width: 700px) {

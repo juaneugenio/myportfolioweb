@@ -45,8 +45,9 @@ function About({ variants }) {
 				enjoyed working as a Spanish teacher in several Bavarian public and private institutions.
 			</p>
 			<p>
-				However, with the advances in current technology, I think it’s time to revisit my technical roots, which have
-				always been part of me. I’m sure software development is the right way for me.
+				With the continuous scientific and technological advances, I believe it is time to return to my technical roots,
+				which have always been a part of me. And here I am, building my reality through this exciting adventure of web
+				development.
 			</p>
 			<h3>Work experience</h3>
 
