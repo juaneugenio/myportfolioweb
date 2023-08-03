@@ -73,9 +73,6 @@ function About({ variants }) {
 
 			<Timeline lang="en" theme={customTheme} dateFormat="only-number" collapse withoutDay>
 				{education.map((institut) => {
-					console.log("👉 Line-37 ▶︎▶︎", typeof endDate);
-					console.log("👉 Line-75 ▶︎▶︎", institut.url);
-
 					return (
 						<Events
 							title={institut.institution}
