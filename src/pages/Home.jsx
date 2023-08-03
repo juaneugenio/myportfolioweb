@@ -20,7 +20,7 @@ function Home({ variants }) {
 					My journey as a developer began back in 2021, when I dived into the exciting realm of the Javascript MERN
 					stack. Since then, I have been constantly improving my functional and Obejct-oriented programming skills,
 					focusing on projects with ReactJS and responsive web design. On the backend, I'm comfortable with Express,
-					Node, MongoDB, REST API and server-side rendering.
+					Node, MongoDB, REST APIs.
 				</p>
 				<p>
 					But technical knowledge alone is not enough, is it? During my career as a Spanish teacher, I developed the
@@ -29,7 +29,7 @@ function Home({ variants }) {
 					interpersonal skills will help me to work effectively with both clients and development teams.
 				</p>
 				<p>
-					My immediate goal as a career move is to secure a full-time position in web development, ideally within a
+					My immediate goal as a career changer is to secure a full-time position in web development, ideally within a
 					dynamic team that appreciates my communication, analytical and problem-solving skills.
 				</p>
 			</div>

@@ -25,25 +25,37 @@
 		],
 		"projects": [
 			{
-				"id": "01",
+				"id": "04",
 				"name": "Bl.anty Blog",
 				"type": "Fullstack",
 				"img": "src/assets/profile-pic.png",
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://blanty.netlify.app/",
-				"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur omnis laborum, ut temporibus rerum magnam culpa sunt harum adipisci minima doloremque. Natus necessitatibus nihil exercitationem enim accusamus non omnis vero consequatur adipisci itaque possimus.",
+				"description": "This full-stack MERN application is a plant blog that allows users to perform CRUD operations to create user accounts and share photos and post information about plants. It is designed with an eﬃcient MVC architecture and features a responsive user interface. It is deployed on Render, Netlify and Cloudinary.",
 				"techs": [
 					"ReactJS",
 					"JavaScript",
+					"React Router",
 					"CSS3",
 					"HTML5",
 					"MongoDB",
 					"ExpressJS",
-					"MVC Architecture",
+					"Axios",
 					"NodeJS",
 					"Responsive Design"
 				]
+			},
+			{
+				"id": "03",
+				"name": "Sky Diver Game",
+				"type": "Fullstack",
+				"img": "src/assets/profile-pic.png",
+				"year": "2023",
+				"devs": ["eugenio"],
+				"url": "https://cluedojs-play.netlify.app/",
+				"description": "An Arcade-style game developed with JavaScript and p5.js. The goal is to control a sky diver pilot to dodge obstacles and score 100 points, while increasing diﬃculty. Main functionalities are: User controls, graphics rendering, event handling, animations, scoring and gameplay systems.",
+				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design", "Objec-Oriented Programming"]
 			},
 			{
 				"id": "02",
@@ -53,25 +65,26 @@
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://cluedojs-play.netlify.app/",
-				"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur omnis laborum, ut temporibus rerum magnam culpa sunt harum adipisci minima doloremque. Natus necessitatibus nihil exercitationem enim accusamus non omnis vero consequatur adipisci itaque possimus, quae ipsa ad alias aperiam, id quibusdam illum. Quo, sed. Fugit magni quo dolor cumque perferendis.",
-				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design"]
+				"description": "Cluedo Game is a web version of the classic detective board game Cluedo in which players try to ﬁnd out who committed the murder, with what weapon and in which room. The game implements a responsive single-page application with an intuitive and eﬀective user interface.",
+				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design", "Objec-Oriented Programming"]
 			},
 			{
-				"id": "03",
+				"id": "01",
 				"name": "Calathea Blog",
 				"type": "Fullstack",
 				"img": "src/assets/profile-pic.png",
 				"year": "2023",
 				"devs": ["eugenio", "anna-velarde"],
 				"url": " ./assets/profile-pic.png",
-				"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur omnis laborum, ut temporibus rerum magnam culpa sunt harum adipisci minima doloremque. Natus necessitatibus nihil exercitationem enim accusamus non omnis vero consequatur adipisci itaque possimus, quae ipsa ad alias aperiam, id quibusdam illum. Quo, sed. Fugit magni quo dolor cumque perferendis.",
+				"description": "My first full-stack web application developed with handlebars in the frontend and for the backend with express, node and mongodb. I learned the integration of the front- and backend of an application, as well as database creation and accessibility with mongoDB.",
 				"techs": [
-					"ReactJS",
+					"Handlebars",
 					"JavaScript",
 					"CSS3",
 					"HTML5",
 					"MongoDB",
 					"ExpressJS",
+					"Routing",
 					"MVC Architecture",
 					"NodeJS",
 					"Responsive Design"
