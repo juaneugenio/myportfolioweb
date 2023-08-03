@@ -5,6 +5,7 @@
 	"type": "module",
 	"homepage": "https://juaneugenio.github.io/myportfolioweb/",
 	"scripts": {
+		"predeploy": "vite build",
 		"deploy": "gh-pages -d build",
 		"dev": "vite",
 		"build": "vite build",
