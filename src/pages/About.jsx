@@ -3,19 +3,19 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { Timeline, Events, Event } from "vertical-timeline-component-react";
 import { work, education } from "../dataAbout";
-console.log("👉 Line-6 ▶︎▶︎", work);
 
 function About({ variants }) {
 	const customTheme = {
 		borderDotColor: "#fd7e14",
-		descriptionColor: "#a9a8a8",
+		descriptionColor: "#F7F7F2",
 		dotColor: "#30292f",
-		eventColor: "#a9a8a8",
+		eventColor: "#E4E6C3",
 		lineColor: "#fd7e14",
-		subtitleColor: "#a9a8a8",
-		titleColor: "#fd7e14",
-		yearColor: "#a9a8a8",
+		subtitleColor: "#C5D86D",
+		titleColor: "#E4E6C3",
+		yearColor: "#C5D86D",
 	};
+
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
@@ -25,6 +25,7 @@ function About({ variants }) {
 			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
 		>
 			<h2>About me</h2>
+
 			<p>
 				Here I mainly present my <strong> work and educational </strong>biography. But quickly, let me tell you a bit
 				more about myself.
@@ -46,15 +47,14 @@ function About({ variants }) {
 			</p>
 			<p>
 				With the continuous scientific and technological advances, I believe it is time to return to my technical roots,
-				which have always been a part of me. And here I am, building my reality through this exciting adventure of web
+				which have always been a part of me. So here I am, building my reality through this exciting adventure in web
 				development.
 			</p>
+
 			<h3>Work experience</h3>
 
 			<Timeline lang="en" theme={customTheme} dateFormat="only-number" collapse withoutDay>
 				{work.map((institut) => {
-					// console.log("👉 Line-37 ▶︎▶︎", typeof endDate);
-
 					return (
 						<Events
 							title={institut.institution}

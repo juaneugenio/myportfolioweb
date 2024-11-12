@@ -2,6 +2,21 @@
 
 const work = [
 	{
+		id: "05",
+		institution: "parcelLab GmbH, München",
+		role: "Junior Technical Support Engineer",
+		startDate: "Sept. 2023",
+		endDate: "Sept. 2024",
+		taskTitle: "Summary of task and responsabilities.",
+		url: "https://www.parcel-lab.de/",
+		tasks: [
+			"Served as primary point of contact for B2B clients, efficiently resolving technical issues and optimizing customer communications through HTML and JavaScript customizations.",
+			"Collaborated with cross-functional teams to implement product improvements and provide technical guidance on solution optimization.",
+			"Contributed to team growth by training new support engineers and maintaining technical documentation for best practices.",
+			"Utilized technical tools including Zendesk, Jira, and Git while managing client requests and operational tasks.",
+		],
+	},
+	{
 		id: "04",
 		institution: "Münchner Volkshochschule, München",
 		role: "Spanish Teacher",

@@ -17,7 +17,7 @@ function Navbar() {
 	const menuLinks = [
 		{ name: "home", path: "/" },
 		{ name: "projects", path: "/projects" },
-		{ name: "about", path: "/about" },
+		{ name: "career", path: "/about" },
 		{ name: "contact", path: "/contact" },
 	];
 
