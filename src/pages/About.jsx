@@ -24,31 +24,36 @@ function About({ variants }) {
 			exit="exit" // Exit state (used later) to variants.exit
 			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
 		>
-			<h2>About me</h2>
+			<h2>A Glimpse Into My Background</h2>
 
 			<p>
-				Here I mainly present my <strong> work and educational </strong>biography. But quickly, let me tell you a bit
-				more about myself.
+				Since I was a child, I’ve been fascinated by how things work. Whenever something broke, I would analyze it and
+				figure out how to fix it. No toy or device escaped my hands— I even took apart my grandmother’s TV! 🫣
 			</p>
 			<p>
-				Ever since I was a kid, I’ve always been fascinated by taking things apart and putting them back together to
-				understand how they work. I remember my friends and neighbors often came to me to have their gadgets fixed.
+				With the same motivation and curiosity, I completed my studies in Electronics at a technical school, where I
+				expanded my practical skills in the real world. Years later, at university, I chose to pursue a path closer to
+				the humanities, first studying Communication and then Psychology. These disciplines helped me hone my
+				communication, resilience, active listening, and empathy skills—tools I continue to apply in both my personal
+				and professional life.
 			</p>
 			<p>
-				I finished high school with a degree in electronics, but also studied electricity, mechanics and carpentry. I
-				really enjoyed the practical technical projects, although this required knowledge of mathematics, chemistry and
-				physics too. However, in college I decided to strengthen my human skills by studying communication and
-				psychology.
+				Almost a year after finishing university, I decided to move to Germany, where I worked as a Spanish teacher.
+				This role allowed me to leverage my teaching skills while developing new ones, such as adapting to new
+				environments, working in multidisciplinary teams, and planning. It also gave me the chance to connect with
+				people from various backgrounds and cultures, and to understand different approaches to problem-solving and
+				collaborative work.
 			</p>
 			<p>
-				At the end of 2006, I visited Germany for a few weeks and fell in love with the country. So I decided to move
-				there a year later, aware of the cultural, professional and linguistic challenges ahead. Since then, I have
-				enjoyed working as a Spanish teacher in several Bavarian public and private institutions.
+				However, my passion for technology never faded, so I decided to change my professional path and focus on web
+				development. In 2023, I had the opportunity to immerse myself in the world of programming as a technical support
+				engineer, where I learned, among many other skills, to understand user needs and expectations. This is crucial
+				for creating web applications that truly make a difference.
 			</p>
 			<p>
-				With the continuous scientific and technological advances, I believe it is time to return to my technical roots,
-				which have always been a part of me. So here I am, building my reality through this exciting adventure in web
-				development.
+				In my role as a technical support engineer, I also encountered stressful situations, such as resolving urgent
+				problems under pressure. However, I’ve grown accustomed to handling them calmly and effectively, communicating
+				clearly and proactively with the team to find quick solutions and keep everything under control.
 			</p>
 
 			<h3>Work experience</h3>
