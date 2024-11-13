@@ -69,9 +69,17 @@ strong {
 	text-align: center;
 	overflow: auto;
 }
+
 .menulink:hover {
 	background-color: var(--card-color);
 	color: var(--txt-color);
+	border-radius: 7px;
+}
+
+.menulink.active {
+	font-weight: bold;
+	color: var(--txt-color);
+	background-color: var(--card-color);
 	border-radius: 7px;
 }
 /* SINGLE PAGES BODY */

@@ -1,6 +1,6 @@
 /** @format */
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useSound from "use-sound";
 import soundClick from "../assets/bubble-click.wav";
 import profilPict from "../assets/profile-pic.png";
@@ -25,9 +25,9 @@ function Navbar() {
 		<nav className="menubar">
 			<img className="nav-picture" src={profilPict} alt="profile picture" />
 			{menuLinks.map((item) => (
-				<Link key={item.path} to={item.path} className="menulink" onMouseEnter={handleMouseEnter}>
+				<NavLink key={item.path} to={item.path} className="menulink" onMouseEnter={handleMouseEnter}>
 					{item.name}
-				</Link>
+				</NavLink>
 			))}
 		</nav>
 	);

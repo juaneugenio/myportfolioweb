@@ -12,25 +12,37 @@ function Home({ variants }) {
 			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
 		>
 			<blockquote className="quote">
-				👋🏼 Hello! <br />I am <strong>Juan</strong>, welcome to my Portfolio
+				👋🏼 Hello & welcome! <br />I am <strong>Juan</strong>, a tech enthusiast and web developer passionate about
+				technology.
 				{/* <q>Debugging the present to develop the future</q> */}
 			</blockquote>
 			<div className="home-content">
 				<p>
-					My journey as a developer began back in 2021, when I dived into the exciting realm of the Javascript MERN
-					stack. Since then, I have been constantly improving my functional and Obejct-oriented programming skills,
-					focusing on projects with ReactJS and responsive web design. On the backend, I'm comfortable with Express,
-					Node, MongoDB, REST APIs.
+					My journey into the world of web development began in 2021, when I decided to pivot my career and immerse
+					myself in the MERN universe. Since then, I have maintained a continuous and steady focus on growing as a
+					developer.
 				</p>
 				<p>
-					But technical knowledge alone is not enough, is it? During my career as a Spanish teacher, I developed the
-					ability to listen carefully to the learning needs of my students and to offer effective solutions to the
-					challenges they face in their learning process. <br /> I am confident that the combination of my technical and
-					interpersonal skills will help me to work effectively with both clients and development teams.
+					Prior to this, I was a Spanish teacher at several prominent institutions in Germany. Now, instead of
+					explaining grammar, I dedicate myself to creating applications that combine intuitive design with
+					functionality, as I am especially motivated by the knowledge that development can improve the digital
+					experience for others.
 				</p>
 				<p>
-					My immediate goal as a career changer is to secure a full-time position in web development, ideally within a
-					dynamic team that appreciates my communication, analytical and problem-solving skills.
+					2023 was an interesting year, as it marked the start of my professional career as a technical support
+					engineer, where I learned a great deal about teamwork and customer service. In this context, helping clients
+					or users resolve their technical issues is not so different from explaining the uses of the subjunctive to my
+					former students 😅.
+				</p>
+				<p>
+					I find satisfaction in working with people who value teaching and learning, and who consider not only the
+					company's objectives but also individual professional and personal development. As a teammate, I am a curious,
+					reflective, and honest person who thrives in environments that foster creativity, innovation, and mutual
+					learning.
+				</p>
+				<p>
+					If my profile interests you, please don't hesitate to reach out. I am open to new opportunities and
+					professional connections.
 				</p>
 			</div>
 		</motion.section>
