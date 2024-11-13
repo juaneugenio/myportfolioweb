@@ -32,6 +32,7 @@
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://blanty.netlify.app/",
+				"githubUrl": "https://github.com/juaneugenio/plant-bloggin-app",
 				"description": "This full-stack MERN application is a plant blog that allows users to perform CRUD operations to create user accounts and share photos and post information about plants. It is designed with an eﬃcient MVC architecture and features a responsive user interface. It is deployed on Render, Netlify and Cloudinary.",
 				"techs": [
 					"ReactJS",
@@ -54,6 +55,7 @@
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://juaneugenio.github.io/Infinite-Skydiver-Game/",
+				"githubUrl": "https://github.com/juaneugenio/Infinite-Skydiver-Game",
 				"description": "An Arcade-style game developed with JavaScript and p5.js. The goal is to control a sky diver pilot to dodge obstacles and score 100 points, while increasing diﬃculty. Main functionalities are: User controls, graphics rendering, event handling, animations, scoring and gameplay systems.",
 				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design", "Objec-Oriented Programming"]
 			},
@@ -65,6 +67,7 @@
 				"year": "2023",
 				"devs": ["eugenio"],
 				"url": "https://cluedojs-play.netlify.app/",
+				"githubUrl": "https://github.com/juaneugenio/cluedo-Game-js",
 				"description": "Cluedo Game is a web version of the classic detective board game Cluedo in which players try to ﬁnd out who committed the murder, with what weapon and in which room. The game implements a responsive single-page application with an intuitive and eﬀective user interface.",
 				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design", "Objec-Oriented Programming"]
 			}
