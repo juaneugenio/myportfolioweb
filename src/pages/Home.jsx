@@ -12,9 +12,7 @@ function Home({ variants }) {
 			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
 		>
 			<blockquote className="quote">
-				👋🏼 Hello & welcome! <br />I am <strong>Juan</strong>, a tech enthusiast and web developer passionate about
-				technology.
-				{/* <q>Debugging the present to develop the future</q> */}
+				👋🏼 Hello & welcome! <br />I am <strong>Juan</strong>, a web developer passionate about technology.
 			</blockquote>
 			<div className="home-content">
 				<p>
