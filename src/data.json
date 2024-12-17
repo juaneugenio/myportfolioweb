@@ -25,9 +25,31 @@
 		],
 		"projects": [
 			{
+				"id": "04",
+				"name": "Random Quote Generator",
+				"type": "Frontend",
+				"img": "src/assets/profile-pic.png",
+				"year": "2024",
+				"devs": ["eugenio"],
+				"url": "https://juaneugenio.github.io/random-quote-card/",
+				"githubUrl": "https://github.com/juaneugenio/random-quote-card",
+				"description": "This is web application generates random quotes along with a dynamic background color that moves constantly. It uses an API from a JSON file to fetch quotes and each interaction triggers a change in the background and button colors, creating an engaging and visually appealing experience.",
+				"techs": [
+					"ReactJS",
+					"React Router",
+					"CSS3",
+					"HTML5",
+					"Fetch API",
+					"PropTypes",
+					"Responsive Design",
+					"Vite",
+					"pnpm"
+				]
+			},
+			{
 				"id": "03",
 				"name": "Bl.anty Blog",
-				"type": "Fullstack",
+				"type": "Fullstack MERN",
 				"img": "src/assets/profile-pic.png",
 				"year": "2023",
 				"devs": ["eugenio"],
@@ -50,7 +72,7 @@
 			{
 				"id": "02",
 				"name": "Sky Diver Game",
-				"type": "Fullstack",
+				"type": "Javascript OOP",
 				"img": "src/assets/profile-pic.png",
 				"year": "2023",
 				"devs": ["eugenio"],
@@ -62,7 +84,7 @@
 			{
 				"id": "01",
 				"name": "Cluedo Game",
-				"type": "Fullstack",
+				"type": "Javascript OOP",
 				"img": "src/assets/profile-pic.png",
 				"year": "2023",
 				"devs": ["eugenio"],
