@@ -25,6 +25,18 @@
 		],
 		"projects": [
 			{
+				"id": "05",
+				"name": "Social Website Clone",
+				"type": "Frontend",
+				"img": "src/assets/profile-pic.png",
+				"year": "2024",
+				"devs": ["eugenio"],
+				"url": "https://juaneugenio.github.io/social-app-clone/index.html",
+				"githubUrl": "https://github.com/juaneugenio/social-app-clone",
+				"description": "This Social App Clone is a project designed to showcase my frontend development skills using HTML, CSS, and JavaScript. This Web App simulates a social media application and serves as a practical demonstration of my abilities in creating responsive web designs.",
+				"techs": ["CSS3", "HTML5", "Javascript", "DOM-Manipulation", "Responsive Design", "Vite", "pnpm"]
+			},
+			{
 				"id": "04",
 				"name": "Random Quote Generator",
 				"type": "Frontend",
