@@ -25,6 +25,18 @@
 		],
 		"projects": [
 			{
+				"id": "06",
+				"name": "My Favorite Recipes",
+				"type": "Frontend",
+				"img": "src/assets/profile-pic.png",
+				"year": "2024",
+				"devs": ["eugenio"],
+				"url": "https://juaneugenio.github.io/favorite-recipes/",
+				"githubUrl": "https://github.com/juaneugenio/favorite-recipes",
+				"description": "This project is a frontendweb application about favorite recipes worldwide. It allows users to mark recipes as favorites, show a filtered list of favorite recipes. It is built with React, Pure CSS, and JavaScript, and uses React router Dom to navigate to the Recipe Page. The app is responsive and optimized for mobile devices.",
+				"techs": ["CSS3", "HTML5", "Javascript", "React", "React Router", "Responsive Design", "Vite", "pnpm"]
+			},
+			{
 				"id": "05",
 				"name": "Social Website Clone",
 				"type": "Frontend",
