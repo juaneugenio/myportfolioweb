@@ -36,9 +36,9 @@ const Projects = ({ variants }) => {
 					return (
 						<ul key={proj.id} className='card-container'>
 							{/* <img src={proj.img} alt={`${proj.name}'s screenshot `} style={{ width: "3em" }} /> */}
-							<a href={proj.url} target='_blank'>
+							<a href={proj.url} target='_blank' rel='noopener noreferrer' aria-label={`Visit ${proj.name} project`}>
 								<motion.h3
-									whileHover={{ scale: 1.1 }}
+									whileHover={{ scale: 1.04 }}
 									whileTap={{ scale: 0.9 }}
 									transition={{ type: 'spring', stiffness: 500, damping: 5 }}
 								>
@@ -48,14 +48,20 @@ const Projects = ({ variants }) => {
 									</i>
 								</motion.h3>
 							</a>
-							<p className='subtitle'>
+							<span className='subtitle'>
 								{proj.type} Project - {proj.year}
-							</p>
+							</span>
 							<p className='proj-description'>{proj.description}</p>
-							<a href={proj.githubUrl} target='_blank' className='github-link'>
+							<a
+								href={proj.githubUrl}
+								target='_blank'
+								rel='noopener noreferrer'
+								className='github-link'
+								aria-label={`View ${proj.name} source code on Github`}
+							>
 								Github repo for more details
 							</a>
-							<div>
+							<div className='tags-container'>
 								{proj.techs.map((tech) => (
 									<span className='tag' key={tech}>
 										{tech}

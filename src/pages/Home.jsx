@@ -12,8 +12,7 @@ function Home({ variants }) {
 			transition={{ ease: 'linear', duration: 0.5, x: { duration: 1 } }}
 		>
 			<blockquote className='quote'>
-				<span className='swing'>👋🏼</span> Hello & welcome! <br />I am <strong>Juan</strong>, a web developer passionate
-				about technology.
+				<span className='swing'>👋🏼</span> Hello! <br />My name is <strong>Juan</strong>
 			</blockquote>
 			<div className='home-content'>
 				<p>
