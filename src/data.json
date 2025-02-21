@@ -26,7 +26,7 @@
 		"projects": [
 			{
 				"id": "06",
-				"name": "My Favorite Recipes",
+				"name": "Favorite Recipes",
 				"type": "Frontend",
 				"img": "src/assets/profile-pic.png",
 				"year": "2024",
@@ -38,7 +38,7 @@
 			},
 			{
 				"id": "05",
-				"name": "Social Website Clone",
+				"name": "Social Web Clone",
 				"type": "Frontend",
 				"img": "src/assets/profile-pic.png",
 				"year": "2024",
@@ -50,7 +50,7 @@
 			},
 			{
 				"id": "04",
-				"name": "Random Quote Generator",
+				"name": "Random Quotes",
 				"type": "Frontend",
 				"img": "src/assets/profile-pic.png",
 				"year": "2024",
@@ -72,7 +72,7 @@
 			},
 			{
 				"id": "03",
-				"name": "Bl.anty Blog",
+				"name": "Plant's Blog",
 				"type": "Fullstack MERN",
 				"img": "src/assets/profile-pic.png",
 				"year": "2023",
