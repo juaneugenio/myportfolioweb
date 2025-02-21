@@ -1,28 +1,28 @@
 /** @format */
-import PropTypes from "prop-types";
-import { motion } from "framer-motion";
-import { Timeline, Events, Event } from "vertical-timeline-component-react";
-import { work, education } from "../dataAbout";
+import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
+import { Timeline, Events, Event } from 'vertical-timeline-component-react';
+import { work, education } from '../dataAbout';
 
 function About({ variants }) {
 	const customTheme = {
-		borderDotColor: "#fd7e14",
-		descriptionColor: "#F7F7F2",
-		dotColor: "#30292f",
-		eventColor: "#E4E6C3",
-		lineColor: "#fd7e14",
-		subtitleColor: "#C5D86D",
-		titleColor: "#E4E6C3",
-		yearColor: "#C5D86D",
+		borderDotColor: '#fd7e14',
+		descriptionColor: '#F7F7F2',
+		dotColor: '#30292f',
+		eventColor: '#E4E6C3',
+		lineColor: '#fd7e14',
+		subtitleColor: '#C5D86D',
+		titleColor: '#E4E6C3',
+		yearColor: '#C5D86D',
 	};
 
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
-			initial="hidden" // Set the initial state to variants.hidden
-			animate="enter" // Animated state to variants.enter
-			exit="exit" // Exit state (used later) to variants.exit
-			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
+			initial='hidden' // Set the initial state to variants.hidden
+			animate='enter' // Animated state to variants.enter
+			exit='exit' // Exit state (used later) to variants.exit
+			transition={{ ease: 'linear', duration: 0.5, x: { duration: 1 } }}
 		>
 			<h2>A Glimpse Into My Background</h2>
 
@@ -58,7 +58,7 @@ function About({ variants }) {
 
 			<h3>Work experience</h3>
 
-			<Timeline lang="en" theme={customTheme} dateFormat="only-number" collapse withoutDay>
+			<Timeline lang='en' theme={customTheme} dateFormat='only-number' collapse withoutDay>
 				{work.map((institut) => {
 					return (
 						<Events
@@ -76,7 +76,7 @@ function About({ variants }) {
 			</Timeline>
 			<h3>Education & Certifications</h3>
 
-			<Timeline lang="en" theme={customTheme} dateFormat="only-number" collapse withoutDay>
+			<Timeline lang='en' theme={customTheme} dateFormat='only-number' collapse withoutDay>
 				{education.map((institut) => {
 					return (
 						<Events

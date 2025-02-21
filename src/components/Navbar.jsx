@@ -22,10 +22,14 @@ function Navbar() {
 	];
 
 	return (
-		<nav className="menubar">
-			<img className="nav-picture" src={profilPict} alt="profile picture" />
+		<nav className='menubar'>
+			<img
+				className='nav-picture swing'
+				src={profilPict}
+				alt='profile picture'
+			/>
 			{menuLinks.map((item) => (
-				<NavLink key={item.path} to={item.path} className="menulink" onMouseEnter={handleMouseEnter}>
+				<NavLink key={item.path} to={item.path} className='menulink' onMouseEnter={handleMouseEnter}>
 					{item.name}
 				</NavLink>
 			))}

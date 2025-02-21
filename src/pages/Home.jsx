@@ -1,20 +1,21 @@
 /** @format */
-import PropTypes from "prop-types";
-import { motion } from "framer-motion";
+import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 
 function Home({ variants }) {
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
-			initial="hidden" // Set the initial state to variants.hidden
-			animate="enter" // Animated state to variants.enter
-			exit="exit" // Exit state (used later) to variants.exit
-			transition={{ ease: "linear", duration: 0.5, x: { duration: 1 } }}
+			initial='hidden' // Set the initial state to variants.hidden
+			animate='enter' // Animated state to variants.enter
+			exit='exit' // Exit state (used later) to variants.exit
+			transition={{ ease: 'linear', duration: 0.5, x: { duration: 1 } }}
 		>
-			<blockquote className="quote">
-				👋🏼 Hello & welcome! <br />I am <strong>Juan</strong>, a web developer passionate about technology.
+			<blockquote className='quote'>
+				<span className='swing'>👋🏼</span> Hello & welcome! <br />I am <strong>Juan</strong>, a web developer passionate
+				about technology.
 			</blockquote>
-			<div className="home-content">
+			<div className='home-content'>
 				<p>
 					My journey into the world of web development began in 2021, when I decided to pivot my career and immerse
 					myself in the MERN universe. Since then, I have maintained a continuous and steady focus on growing as a
