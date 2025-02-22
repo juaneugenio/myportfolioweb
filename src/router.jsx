@@ -1,47 +1,45 @@
 /** @format */
 
-import { createBrowserRouter } from "react-router-dom";
-import ErrorPage from "./components/ErrorPage";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import App from "./App";
+import { createBrowserRouter, Navigate } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import App from './App';
+import { pageTransition } from './config/animations';
 
-// From framer-motion config passed as props
-const variants = {
-	hidden: { opacity: 0, x: -1, y: 2 },
-	enter: { opacity: 1, x: 0, y: 0 },
-	exit: { opacity: 0, x: 0, y: 0 },
-};
-const router = createBrowserRouter([
+const routes = [
 	{
-		path: "/",
+		path: '/',
 		element: <App />,
 		errorElement: <ErrorPage />,
-		// loader: rootLoader,
-		// action: rootAction,
 		children: [
-			{ index: true, element: <Home variants={variants} /> },
 			{
-				path: "/about",
-				element: <About variants={variants} />,
-				// loader: contactLoader,
+				index: true,
+				element: <Home variants={pageTransition} />,
 			},
 			{
-				path: "/projects",
-				element: <Projects variants={variants} />,
-				// loader: contactLoader,
+				path: 'about',
+				element: <About variants={pageTransition} />,
 			},
 			{
-				path: "/contact",
-				element: <Contact variants={variants} />,
-				// loader: contactLoader,
-				// action: editAction,
-				// errorElement: <ErrorPage />,
+				path: 'projects',
+				element: <Projects variants={pageTransition} />,
+			},
+			{
+				path: 'contact',
+				element: <Contact variants={pageTransition} />,
+			},
+			{
+				// Redirecting all unknown routes to the home page
+				path: '*',
+				element: <Navigate to='/' replace />,
 			},
 		],
 	},
-]);
+];
+
+const router = createBrowserRouter(routes);
 
 export default router;
