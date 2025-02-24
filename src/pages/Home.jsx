@@ -1,8 +1,17 @@
 /** @format */
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
+import Avatar from '../assets/AvatarSVG.svg?react';
+import { useEffect } from 'react';
 
 function Home({ variants }) {
+	useEffect(() => {
+		const font = new FontFace('Moogalator', 'url(/src/assets/fonts/moogalator.woff2)');
+		font.load().then(() => {
+			document.fonts.add(font);
+		});
+	}, []);
+
 	return (
 		<motion.section
 			variants={variants} // Pass the variant object into Framer Motion
@@ -11,9 +20,15 @@ function Home({ variants }) {
 			exit='exit' // Exit state (used later) to variants.exit
 			transition={{ ease: 'linear', duration: 0.5, x: { duration: 1 } }}
 		>
-			<blockquote className='quote'>
-				<span className='swing'>👋🏼</span> Hello! <br />My name is <strong>Juan</strong>
-			</blockquote>
+			<div className='hero-container'>
+				<blockquote className='quote'>
+					Hello, my <br />
+					name is <strong>Juan</strong>
+				</blockquote>
+				<div className='hero-illustration'>
+					<Avatar className='hero-svg' />
+				</div>
+			</div>
 			<div className='home-content'>
 				<p>
 					My journey into the world of web development began in 2021, when I decided to pivot my career and immerse

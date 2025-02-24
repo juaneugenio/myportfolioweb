@@ -27,8 +27,14 @@ function Navbar() {
 			<nav className='menubar'>
 				<img className='nav-picture swing' src={profilPict} alt='profile picture' />
 				{menuLinks.map((item) => (
-					<NavLink key={item.path} to={item.path} className='menulink' onMouseEnter={handleMouseEnter}>
-						{item.name}
+					<NavLink
+						key={item.path}
+						to={item.path}
+						className='menulink'
+						onMouseEnter={handleMouseEnter}
+						data-text={item.name}
+					>
+						<span>{item.name}</span>
 					</NavLink>
 				))}
 			</nav>

@@ -1,5 +1,11 @@
 /** @format */
-
+@font-face {
+  font-family: 'Moogalator';
+  src: url('./assets/fonts/Moogalator-NonCommercial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
 	/* Tema oscuro (actual) */
 	--bg-color-dark: #141e27;
@@ -52,11 +58,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* transition: background-color 0.15s ease, color 0.03s ease; */
-}
-/* to avoid Fouc */
-*:not(.horizontal-border-top):not(.horizontal-border-bottom) {
-	transition: background-color 0.15s ease, color 0.03s ease;
 }
 
 html {
@@ -70,13 +71,27 @@ html {
 html::-webkit-scrollbar {
 	display: none;
 }
+body,
+.card-container,
+.menulink,
+.theme-toggle,
+.tag,
+.github-link {
+	transition: background-color 0.3s ease, color 0.2s ease;
+}
+.horizontal-border-top,
+.horizontal-border-bottom,
+.tooltip,
+.tooltiptext {
+	transition: none;
+}
 body {
 	min-height: calc(100vh - 2rem);
 	border-inline: 1rem solid var(--frame-color);
 	background-color: var(--bg-color);
 	color: var(--txt-color);
 	margin: 1rem 0;
-	font-size: clamp(1.03125rem, 1vw + 0.875rem, 1.1875rem);
+	font-size: clamp(1rem, 1vw + 0.875rem, 1.2rem);
 	line-height: clamp(1.5rem, 1.5vw + 1.25rem, 1.75rem);
 	font-weight: 300;
 	font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
@@ -112,18 +127,18 @@ h3 {
 	color: var(--head-color);
 }
 h1 {
-	font-size: clamp(2rem, 3vw + 1rem, 4rem);
-	line-height: clamp(2.5rem, 3.5vw + 1rem, 4.5rem);
+	font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
+	line-height: clamp(2.25rem, 3.5vw + 1rem, 4rem);
 }
 h2 {
-	font-size: clamp(1.75rem, 2.5vw + 1rem, 3.5rem);
-	line-height: clamp(2.25rem, 3vw + 1rem, 4rem);
+	font-size: clamp(1.75rem, 2vw + 1rem, 3rem);
+	line-height: clamp(2rem, 2.5vw + 1rem, 3.5rem);
 	margin-bottom: clamp(2.5rem, 3vw + 1.5rem, 3.5rem);
 }
 
 h3 {
 	font-size: clamp(1.5rem, 1.5vw + 1rem, 2rem);
-	line-height: clamp(2rem, 2.5vw + 1rem, 3.5rem);
+	line-height: clamp(1.75rem, 2vw + 1rem, 2.5rem);
 	margin-bottom: clamp(1.5rem, 1.5vw + 0.8rem, 2rem);
 }
 p {
@@ -265,6 +280,7 @@ strong {
 	text-decoration: none;
 	text-align: center;
 	margin: 0.2rem;
+	position: relative;
 }
 
 .menulink:hover {
@@ -278,6 +294,16 @@ strong {
 	color: var(--txt-color);
 	background-color: var(--card-color);
 	border-radius: 7px;
+}
+.menulink:hover::before {
+	content: attr(data-text);
+	position: absolute;
+	transform: translateX(0.3rem);
+	color: inherit;
+}
+
+.menulink:hover span {
+	opacity: 0;
 }
 .theme-toggle {
 	display: flex;
@@ -314,16 +340,39 @@ strong {
 }
 
 /* HOME CONTENT */
-/* Blockquote */
+
+/* Hero section */
 .quote {
-	font-size: clamp(2.5rem, 2.5vw + 1.8rem, 3.5rem);
-	line-height: clamp(3rem, 3vw + 2rem, 4.5rem);
+	font-size: clamp(2rem, 2vw + 1.5rem, 3rem);
+	line-height: clamp(2.5rem, 2.5vw + 1.75rem, 3.5rem);
 	font-weight: 900;
 	text-align: center;
-	margin-bottom: clamp(2.5rem, 3vw + 1.5rem, 3.5rem);
 }
 .quote strong {
+	font-family: Moogalator, sans-serif;
 	color: var(--head-color);
+}
+.hero-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: clamp(1rem, 3vw, 2rem);
+	margin-bottom: clamp(2rem, 5vw, 3rem);
+	padding: calc(0.5rem + 1vw);
+}
+.hero-illustration {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: clamp(250px, 30vw, 300px);
+	margin: 0 auto;
+}
+.hero-svg {
+	color: var(--head-color);
+	width: 100%;
+	height: auto;
 }
 
 /* PROJECTS PAGE */
@@ -343,7 +392,7 @@ strong {
 	border-radius: clamp(0.4rem, 0.5vw + 0.3rem, 0.7rem);
 	padding: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
 	line-height: clamp(1.3, 1vw + 1.2, 1.5);
-	font-size: clamp(0.875rem, 0.8vw + 0.8rem, 1rem);
+	font-size: clamp(0.875rem, 0.75vw + 0.8rem, 1rem);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -402,7 +451,7 @@ strong {
 	background: var(--frame-color);
 	color: var(--head-color);
 	font-weight: 400;
-	font-size: clamp(0.65rem, 0.5vw + 0.7rem, 0.8rem);
+	font-size: clamp(0.65rem, 0.5vw + 0.6rem, 0.8rem);
 	border: 1px solid #fd7d147f;
 	transition: all 0.2s ease-in-out;
 }
@@ -519,6 +568,23 @@ strong {
 /* RESPONSIVE SECTION */
 /* Tablets grandes y laptops pequeñas */
 @media screen and (max-width: 1024px) {
+	.hero-container {
+		flex-direction: column;
+		gap: clamp(1rem, 2vw, 1.5rem);
+		margin: 0 auto;
+	}
+
+	.hero-illustration {
+		order: 1;
+		margin: 0;
+	}
+
+	.quote {
+		order: 2;
+		text-align: center;
+		flex: 1;
+		margin: 1.5rem auto 2.5rem;
+	}
 	.content {
 		margin-left: 13rem;
 		padding: 0 1.5rem;
@@ -544,7 +610,9 @@ strong {
 	.nav-picture {
 		display: none;
 	}
-
+	.quote{
+		margin: 1.5rem auto 2.5rem;
+	}
 	.content {
 		margin-left: 0;
 		border: none;
@@ -583,6 +651,9 @@ strong {
 	.menulink {
 		width: 100%;
 		margin: 0.1rem 0;
+	}
+	.quote{
+		margin: 0.6rem auto 1.2rem;
 	}
 
 	.projects-section-container {
