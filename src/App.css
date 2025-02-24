@@ -1,10 +1,10 @@
 /** @format */
 @font-face {
-  font-family: 'Moogalator';
-  src: url('./assets/fonts/Moogalator-NonCommercial.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Moogalator';
+	src: url('./assets/fonts/Moogalator-NonCommercial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 :root {
 	/* Tema oscuro (actual) */
@@ -167,19 +167,22 @@ strong {
 	padding: 0.8rem;
 	flex-direction: column;
 }
-
-/* .menubar {
+.desktop-menu {
+	display: flex;
+}
+.menubar {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 0.5rem;
-} */
+}
 
 .nav-picture {
+	align-items: center;
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	border: 4px solid var(--head-color);
-	margin: 0.8rem 0;
+	margin: 0.8rem auto;
 }
 .swing {
 	-webkit-transform-origin: top center;
@@ -351,8 +354,12 @@ strong {
 .quote strong {
 	font-family: Moogalator, sans-serif;
 	color: var(--head-color);
+	margin-top: 0.8rem;
+	display: inline-block;
 }
+
 .hero-container {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -361,18 +368,27 @@ strong {
 	margin-bottom: clamp(2rem, 5vw, 3rem);
 	padding: calc(0.5rem + 1vw);
 }
+.quote,
+.hero-illustration {
+	position: relative;
+	z-index: 2;
+}
+
 .hero-illustration {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	max-width: clamp(250px, 30vw, 300px);
 	margin: 0 auto;
+	background: none;
 }
 .hero-svg {
 	color: var(--head-color);
 	width: 100%;
 	height: auto;
+	fill: var(--bg-color);
+	background: none;
+	max-width: clamp(250px, 35vw, 350px);
 }
 
 /* PROJECTS PAGE */
@@ -593,43 +609,16 @@ strong {
 
 /* Tablets y móviles grandes */
 @media screen and (max-width: 768px) {
-	.sidebar {
-		position: relative;
-		width: 100%;
-		padding: 0.5rem;
-	}
-
-	.menubar {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 0.5rem;
-	}
-
-	.nav-picture {
+	.desktop-menu {
 		display: none;
-	}
-	.quote{
-		margin: 1.5rem auto 2.5rem;
 	}
 	.content {
 		margin-left: 0;
-		border: none;
 		padding: 1rem;
-		border-top-width: 2px;
-		border-top-style: solid;
-		border-image: linear-gradient(90deg, var(--frame-color), var(--head-color), var(--frame-color)) 1;
 	}
 
-	.theme-toggle {
-		position: fixed;
-		bottom: 2rem;
-		right: 2rem;
-		margin: 0;
-		z-index: 1000;
-		width: 2.5rem;
-		height: 2.5rem;
+	.quote {
+		margin: 1.5rem auto 2.5rem;
 	}
 
 	body {
@@ -652,7 +641,7 @@ strong {
 		width: 100%;
 		margin: 0.1rem 0;
 	}
-	.quote{
+	.quote {
 		margin: 0.6rem auto 1.2rem;
 	}
 

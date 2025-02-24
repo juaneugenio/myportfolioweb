@@ -5,6 +5,7 @@ import useSound from 'use-sound';
 import soundClick from '../assets/bubble-click.wav';
 import profilPict from '../assets/profile-pic.png';
 import ThemeToggle from './ThemeToggle';
+import HamburgerMenu from './HamburgerMenu/HamburgerMenu';
 
 // See for Info about useSound: https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/#rising-pitch-11
 
@@ -22,24 +23,37 @@ function Navbar() {
 		{ name: 'contact', path: '/contact' },
 	];
 
-	return (
-		<div className='sidebar'>
-			<nav className='menubar'>
-				<img className='nav-picture swing' src={profilPict} alt='profile picture' />
-				{menuLinks.map((item) => (
-					<NavLink
-						key={item.path}
-						to={item.path}
-						className='menulink'
-						onMouseEnter={handleMouseEnter}
-						data-text={item.name}
-					>
-						<span>{item.name}</span>
-					</NavLink>
-				))}
-			</nav>
+	const NavContent = () => (
+		<>
+			<img className='nav-picture swing' src={profilPict} alt='profile picture' />
+			{menuLinks.map((item) => (
+				<NavLink
+					key={item.path}
+					to={item.path}
+					className='menulink'
+					onMouseEnter={handleMouseEnter}
+					data-text={item.name}
+				>
+					<span>{item.name}</span>
+				</NavLink>
+			))}
 			<ThemeToggle />
-		</div>
+		</>
+	);
+
+	return (
+		<>
+			<div className='sidebar desktop-menu'>
+				<nav className='menubar'>
+					<NavContent />
+				</nav>
+			</div>
+			<div className='mobile-nav'>
+				<HamburgerMenu>
+					<NavContent />
+				</HamburgerMenu>
+			</div>
+		</>
 	);
 }
 
