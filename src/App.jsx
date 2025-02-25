@@ -2,6 +2,7 @@
 import { Outlet } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
+import './styles/variables.css'
 import './App.css';
 
 function App() {

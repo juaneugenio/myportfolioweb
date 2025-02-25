@@ -3,22 +3,39 @@
 .hamburger-btn {
 	display: none;
 	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
+	bottom: var(--spacing-md);
+	right: var(--spacing-md);
 	z-index: 1002;
 	background: var(--bg-color);
 	box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
 	border: none;
-	border-radius: 5px;
+	border-radius: var(--radius-sm);
 	cursor: pointer;
-	padding: 0.5rem;
+	padding: var(--spacing-xs);
 	color: var(--head-color);
-	transition: all 0.3s ease;
+	transition: all var(--transition-normal);
 }
 
 .hamburger-btn:hover {
 	background: var(--card-color);
 	transform: scale(1.1);
+}
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.mobile-overlay.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 .mobile-menu {
@@ -27,71 +44,74 @@
     right: -100%;
     width: 50%;
     height: 100vh;
-    padding: 2rem auto;
-    transition: right 0.3s ease;
+    padding: var(--spacing-md) 0;
+    transition: all var(--transition-normal);
     z-index: 1001;
     visibility: hidden;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     background: var(--card-color);
     border-left: 1px solid var(--head-color);
-    border-radius: 0.6rem;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .mobile-menu.active {
 	right: 0;
 	visibility: visible;
-	display: flex;
+    opacity: 1;
+}
+.mobile-menu .menulink {
+	transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: calc(768 * 1px)) {
 	.hamburger-btn {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 	}
 	.mobile-menu nav {
 		width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem; 
-    }
-	
-    .mobile-menu .nav-picture {
-        margin-bottom: auto;
-        width: 60px;
-        height: 60px;
-    }
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
 
-    .mobile-menu .menubar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 2rem; 
-    }
+	.mobile-menu .nav-picture {
+		margin-bottom: auto;
+		width: 60px;
+		height: 60px;
+	}
 
-    .mobile-menu .theme-toggle {
-        margin-bottom: 6rem; 
-    }
+	.mobile-menu .menubar {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.mobile-menu .theme-toggle {
+		margin-bottom: 6rem;
+	}
 
 	.mobile-menu .menulink {
-        width: 90%;
-        text-align: center;
-        font-size: 1.2rem;
-        border-radius: 7px;
-        transition: all 0.3s ease;
-    }
+		width: 90%;
+		text-align: center;
+		font-size: 1.2rem;
+		border-radius: 7px;
+		transition: all 0.3s ease;
+	}
 
-    .mobile-menu .menulink:hover {
-        background: var(--bg-color);
-        transform: translateX(5px);
-    }
+	.mobile-menu .menulink:hover {
+		background: var(--bg-color);
+		transform: translateX(5px);
+	}
 }

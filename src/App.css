@@ -77,7 +77,7 @@ body,
 .theme-toggle,
 .tag,
 .github-link {
-	transition: background-color 0.3s ease, color 0.2s ease;
+	transition: background-color var(--transition-normal), color var(--transition-fast);
 }
 .horizontal-border-top,
 .horizontal-border-bottom,
@@ -169,6 +169,9 @@ strong {
 }
 .desktop-menu {
 	display: flex;
+}
+.mobile-nav {
+    display: none;
 }
 .menubar {
 	display: flex;
@@ -583,10 +586,10 @@ strong {
 /* Móviles pequeños */
 /* RESPONSIVE SECTION */
 /* Tablets grandes y laptops pequeñas */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: calc(1024 * 1px)) {
 	.hero-container {
 		flex-direction: column;
-		gap: clamp(1rem, 2vw, 1.5rem);
+		gap: clamp(1rem, 2vw, 2rem);
 		margin: 0 auto;
 	}
 
@@ -608,26 +611,35 @@ strong {
 }
 
 /* Tablets y móviles grandes */
-@media screen and (max-width: 768px) {
-	.desktop-menu {
+@media screen and (max-width: calc(768 * 1px)) {
+	.desktop-menu,
+	.sidebar {
 		display: none;
 	}
 	.content {
 		margin-left: 0;
 		padding: 1rem;
 	}
+	.mobile-nav {
+        display: block;
+    }
 
 	.quote {
 		margin: 1.5rem auto 2.5rem;
 	}
+	.horizontal-border-top,
+	.horizontal-border-bottom {
+		display: none;
+	}
 
 	body {
 		margin: 0;
+		border: none;
 	}
 }
 
 /* Móviles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: calc(480 * 1px)) {
 	.app-container {
 		padding-top: 0.5rem;
 	}
@@ -648,25 +660,11 @@ strong {
 	.projects-section-container {
 		grid-template-columns: 1fr;
 	}
-
-	.horizontal-border-top,
-	.horizontal-border-bottom {
-		display: none;
-	}
 }
 
 /* Móviles pequeños */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: calc(320 * 1px)) {
 	body {
-		font-size: 0.9rem;
-	}
-
-	.theme-toggle {
-		bottom: 1rem;
-		right: 1rem;
-	}
-
-	.content {
-		padding: 0.5rem;
+		font-size: 1rem;
 	}
 }
