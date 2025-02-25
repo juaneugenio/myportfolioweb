@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import Avatar from '../assets/AvatarSVG.svg?react';
 import { useEffect, useRef } from 'react';
+import TechMarquee from '../components/TechMarquee/TechMarquee';
+
 
 function Home({ variants }) {
 	const avatarRef = useRef(null);
@@ -13,7 +15,7 @@ function Home({ variants }) {
 			document.fonts.add(font);
 		});
 
-
+// Zoom effect relative to the scroll position
 		    const handleScroll = () => {
 					const scrollPosition = window.scrollY;
 					const maxScroll = 1000;
@@ -45,6 +47,9 @@ function Home({ variants }) {
 					<Avatar className='hero-svg' />
 				</div>
 			</div>
+
+				<TechMarquee />
+
 			<div className='home-content'>
 				<p>
 					My journey into the world of web development began in 2021, when I decided to pivot my career and immerse

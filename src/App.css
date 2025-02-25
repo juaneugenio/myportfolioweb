@@ -338,7 +338,6 @@ strong {
 .content {
 	border-width: 2px;
 	border-style: solid;
-	border-image: linear-gradient(#30292f, var(--head-color), #30292f) 0 0 0 1;
 	border-image: linear-gradient(180deg, var(--frame-color) 0%, var(--head-color) 50%, var(--frame-color) 100%) 0 0 0 1;
 	margin-left: 200px;
 	margin-bottom: calc(1rem + 2vw);
@@ -396,6 +395,52 @@ strong {
 	fill: var(--bg-color);
 	background: none;
 	max-width: clamp(250px, 35vw, 350px);
+}
+
+/* Marquee component for Home Page */
+.tech-marquee-container {
+	position: relative;
+	padding: 2rem 0;
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	
+}
+
+.tech-item {
+	text-transform: uppercase;
+	color: var(--head-color);
+	font-weight: bold;
+	padding: clamp(0.5rem, 1vw + 0.3rem, 2rem);
+	font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+	font-family: Verdana, sans-serif;
+	opacity: 0.6;
+	transition: opacity 0.3s ease;
+	/* background: var(--card-color); */
+}
+.tech-item:hover {
+	opacity: 1;
+
+}
+.tech-marquee-container::before,
+.tech-marquee-container::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100px;
+	height: 100%;
+	z-index: 2;
+}
+
+.tech-marquee-container::before {
+	left: 0;
+	background: linear-gradient(90deg, var(--bg-color) 0%, transparent 100%);
+}
+
+.tech-marquee-container::after {
+	right: 0;
+	background: linear-gradient(270deg, var(--bg-color) 0%, transparent 100%);
 }
 
 /* PROJECTS PAGE */
@@ -623,6 +668,8 @@ strong {
 	.content {
 		margin-left: 0;
 		padding: 1rem;
+		border: none;
+		border-image: none;
 	}
 	.mobile-nav {
 		display: block;
@@ -640,6 +687,9 @@ strong {
 		margin: 0;
 		border: none;
 	}
+	.tech-marquee-container{
+		margin: 1rem 0;
+	}
 }
 
 /* Móviles */
@@ -647,6 +697,15 @@ strong {
 	h2 {
 		font-size: 2.5rem;
 		line-height: 1.2;
+	}
+	p {
+		font-size: clamp(1.1rem, 1vw + 1rem, 1.4rem);
+		line-height: clamp(1.7rem, 1.5vw + 1.35rem, 1.95rem);
+	}
+
+	.proj-description {
+		font-size: clamp(1.1rem, 1vw + 1rem, 1.4rem);
+		line-height: clamp(1.7rem, 1.5vw + 1.35rem, 1.95rem);
 	}
 	.app-container {
 		padding-top: 0.5rem;
