@@ -37,7 +37,7 @@ function Navbar() {
 					<span>{item.name}</span>
 				</NavLink>
 			))}
-			<ThemeToggle />
+			<ThemeToggle onMouseEnter={handleMouseEnter} />
 		</>
 	);
 

@@ -171,7 +171,7 @@ strong {
 	display: flex;
 }
 .mobile-nav {
-    display: none;
+	display: none;
 }
 .menubar {
 	display: flex;
@@ -384,7 +384,11 @@ strong {
 	width: 100%;
 	margin: 0 auto;
 	background: none;
+	/* test animation avatar */
+	transform-origin: center center;
+	will-change: transform;
 }
+
 .hero-svg {
 	color: var(--head-color);
 	width: 100%;
@@ -621,8 +625,8 @@ strong {
 		padding: 1rem;
 	}
 	.mobile-nav {
-        display: block;
-    }
+		display: block;
+	}
 
 	.quote {
 		margin: 1.5rem auto 2.5rem;
@@ -640,6 +644,10 @@ strong {
 
 /* Móviles */
 @media screen and (max-width: calc(480 * 1px)) {
+	h2 {
+		font-size: 2.5rem;
+		line-height: 1.2;
+	}
 	.app-container {
 		padding-top: 0.5rem;
 	}
@@ -663,8 +671,8 @@ strong {
 }
 
 /* Móviles pequeños */
-@media screen and (max-width: calc(320 * 1px)) {
+/* @media screen and (max-width: calc(320 * 1px)) {
 	body {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
-}
+} */

@@ -16,7 +16,7 @@ const Projects = ({ variants }) => {
 			transition={{ ease: 'linear', duration: 0.5, x: { duration: 1 } }}
 		>
 			<section>
-				<h2>My Projects Journey</h2>
+				<h2>Projects</h2>
 				<p>
 					These are a few selected projects primarily built with vanilla <strong>JavaScript</strong>, CSS,{' '}
 					<strong>HTML5</strong>, and <strong>ReactJS</strong>.

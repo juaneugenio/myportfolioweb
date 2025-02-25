@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ onMouseEnter }) => {
 	const [theme, setTheme] = useState(() => {
 		if (typeof window !== 'undefined') {
 			const saved = localStorage.getItem('theme');
@@ -32,6 +32,7 @@ const ThemeToggle = () => {
 
 	const toggleTheme = () => {
 		setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+		onMouseEnter();
 	};
 
 	return (

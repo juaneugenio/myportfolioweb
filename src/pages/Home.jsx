@@ -2,14 +2,30 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import Avatar from '../assets/AvatarSVG.svg?react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 function Home({ variants }) {
+	const avatarRef = useRef(null);
+
 	useEffect(() => {
 		const font = new FontFace('Moogalator', 'url(/src/assets/fonts/moogalator.woff2)');
 		font.load().then(() => {
 			document.fonts.add(font);
 		});
+
+
+		    const handleScroll = () => {
+					const scrollPosition = window.scrollY;
+					const maxScroll = 1000;
+					if (avatarRef.current) {
+						const scale = Math.max(0.6, 1 - scrollPosition / maxScroll);
+						avatarRef.current.style.transform = `scale(${scale})`;
+					}
+				};
+
+				window.addEventListener('scroll', handleScroll, { passive: true });
+				return () => window.removeEventListener('scroll', handleScroll);
+
 	}, []);
 
 	return (
@@ -25,7 +41,7 @@ function Home({ variants }) {
 					Hello, my <br />
 					name is <strong>Juan</strong>
 				</blockquote>
-				<div className='hero-illustration'>
+				<div className='hero-illustration' ref={avatarRef}>
 					<Avatar className='hero-svg' />
 				</div>
 			</div>

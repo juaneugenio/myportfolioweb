@@ -33,7 +33,11 @@ const HamburgerMenu = ({ children }) => {
 
 	return (
 		<>
-			<button className={`hamburger-btn ${isOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label='Toggle menu'>
+			<button
+				className={`hamburger-btn ${isOpen ? 'active' : ''}`}
+				onClick={toggleMenu}
+				aria-label='Toggle menu'
+			>
 				{isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
 			</button>
 

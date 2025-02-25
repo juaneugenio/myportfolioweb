@@ -24,7 +24,7 @@ function About({ variants }) {
 			exit='exit' // Exit state (used later) to variants.exit
 			transition={{ ease: 'linear', duration: 0.5, x: { duration: 1 } }}
 		>
-			<h2>A Glimpse Into My Background</h2>
+			<h2>About Me</h2>
 
 			<p>
 				Since I was a child, I’ve been fascinated by how things work. Whenever something broke, I would analyze it and
