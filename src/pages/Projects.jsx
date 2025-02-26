@@ -18,7 +18,7 @@ const Projects = ({ variants }) => {
 			<section>
 				<h2>Projects</h2>
 				<p>
-					These are a few selected projects primarily built with vanilla <strong>JavaScript</strong>, CSS,{' '}
+					A few selected projects primarily built with vanilla <strong>JavaScript</strong>, <strong>CSS</strong>,{' '}
 					<strong>HTML5</strong>, and <strong>ReactJS</strong>.
 				</p>
 				<p>
@@ -27,8 +27,7 @@ const Projects = ({ variants }) => {
 					across all projects.
 				</p>
 				<p>
-					For deployment and maintenance, I work with various development tools including version control (Git), hosting
-					platforms (Netlify, GitHub Pages), databases (MongoDB), and cloud services (Cloudinary).
+					For version control <strong>Git</strong>, hosting platforms: <strong>Netlify, GitHub Pages</strong>, databases: <strong>MongoDB</strong>, and cloud services: <strong>Cloudinary</strong>.
 				</p>
 			</section>
 			<section className='projects-section-container'>

@@ -438,7 +438,6 @@ strong {
 	right: 0;
 	background: linear-gradient(270deg, var(--bg-color) 0%, transparent 100%);
 }
-
 /* PROJECTS PAGE */
 /* Grid container */
 
@@ -689,10 +688,14 @@ strong {
 		display: none;
 	}
 	.content {
-		margin-left: 0;
+		/* margin-left: 0;
 		padding: 1rem;
 		border: none;
-		border-image: none;
+		border-image: none; */
+
+		max-width: 100%;
+        margin-left: 0;
+        padding: 1rem;
 	}
 	.mobile-nav {
 		display: block;

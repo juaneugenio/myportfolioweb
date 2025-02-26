@@ -2,7 +2,7 @@
 
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage';
-import About from './pages/About';
+import About from './pages/about/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
