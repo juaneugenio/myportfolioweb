@@ -5,7 +5,6 @@ import Avatar from '../assets/AvatarSVG.svg?react';
 import { useEffect, useRef } from 'react';
 import TechMarquee from '../components/TechMarquee/TechMarquee';
 
-
 function Home({ variants }) {
 	const avatarRef = useRef(null);
 
@@ -15,19 +14,18 @@ function Home({ variants }) {
 			document.fonts.add(font);
 		});
 
-// Zoom effect relative to the scroll position
-		    const handleScroll = () => {
-					const scrollPosition = window.scrollY;
-					const maxScroll = 1000;
-					if (avatarRef.current) {
-						const scale = Math.max(0.6, 1 - scrollPosition / maxScroll);
-						avatarRef.current.style.transform = `scale(${scale})`;
-					}
-				};
+		// Zoom effect relative to the scroll position
+		const handleScroll = () => {
+			const scrollPosition = window.scrollY;
+			const maxScroll = 1000;
+			if (avatarRef.current) {
+				const scale = Math.max(0.6, 1 - scrollPosition / maxScroll);
+				avatarRef.current.style.transform = `scale(${scale})`;
+			}
+		};
 
-				window.addEventListener('scroll', handleScroll, { passive: true });
-				return () => window.removeEventListener('scroll', handleScroll);
-
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
 	return (
@@ -48,35 +46,25 @@ function Home({ variants }) {
 				</div>
 			</div>
 
-				<TechMarquee />
+			<TechMarquee />
 
 			<div className='home-content'>
 				<p>
-					My journey into the world of web development began in 2021, when I decided to pivot my career and immerse
-					myself in the MERN universe. Since then, I have maintained a continuous and steady focus on growing as a
-					developer.
+					Frontend web developer with two years of hands-on experience in projects using React, JavaScript, HTML and
+					CSS. I am passionate about creating applications with responsive design and intuitive and functional
+					interfaces.
 				</p>
 				<p>
-					Prior to this, I was a Spanish teacher at several prominent institutions in Germany. Now, instead of
-					explaining grammar, I dedicate myself to creating applications that combine intuitive design with
-					functionality, as I am especially motivated by the knowledge that development can improve the digital
-					experience for others.
+					I complement my frontend skills with basic backend knowledge (Node.js, Express, MongoDB) and I am constantly
+					learning relevant technologies such as TypeScript and PostgreSQL.
 				</p>
 				<p>
-					2023 was an interesting year, as it marked the start of my professional career as a technical support
-					engineer, where I learned a great deal about teamwork and customer service. In this context, helping clients
-					or users resolve their technical issues is not so different from explaining the uses of the subjunctive to my
-					former students 😅.
+					My experience as a B2B Technical Support Engineer has provided me with valuable skills in frontend and backend
+					team collaboration, Git workflow management, deployment and code reviews.
 				</p>
 				<p>
-					I find satisfaction in working with people who value teaching and learning, and who consider not only the
-					company's objectives but also individual professional and personal development. As a teammate, I am a curious,
-					reflective, and honest person who thrives in environments that foster creativity, innovation, and mutual
-					learning.
-				</p>
-				<p>
-					If my profile interests you, please don't hesitate to reach out. I am open to new opportunities and
-					professional connections.
+					As a teammate, I am a curious, reflective, and honest person who thrives in environments that foster
+					creativity, innovation, and mutual learning.
 				</p>
 			</div>
 		</motion.section>
