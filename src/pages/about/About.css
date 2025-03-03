@@ -1,27 +1,26 @@
 /** @format */
-
+/* SKILLS Section */
 .skills-section {
 	padding: 1rem 0;
 	margin: 2rem 0;
-  width: 100%;
-    overflow: hidden;
+	width: 100%;
+	overflow: hidden;
 }
 
 .skills-container {
-  display: grid;
+	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
-    width: 100%;
-    margin: 0 auto;
+	gap: 1.5rem;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .skills-category {
-  min-width: 0;
-  width: 100%;
-  display: flex;
+	min-width: 0;
+	width: 100%;
+	display: flex;
 	flex-direction: column;
 	gap: 0.8rem;
-
 }
 
 .skills-category h4 {
@@ -34,13 +33,13 @@
 .skills-list {
 	display: flex;
 	flex-direction: column;
-  width: 100%;
+	width: 100%;
 	gap: 0.8rem;
 }
 
 .skill-item {
-  width: 100%;
-    min-width: 0;
+	width: 100%;
+	min-width: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -63,35 +62,114 @@
 
 .skill-name {
 	flex: 1;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	font-size: 0.9rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .skill-stars {
 	font-size: 1rem;
 	color: var(--head-color);
-  margin-left: auto;
+	margin-left: auto;
 }
+
+/* WORK Experience Section */
+.experience-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin: 2rem 0;
+}
+
+.experience-card {
+	background-color: var(--card-color);
+	border-radius: 8px;
+	padding: 1.5rem;
+	border: 1px solid #fd7d147e;
+}
+
+.experience-header {
+	margin-bottom: 1rem;
+}
+
+.experience-header h4 {
+	color: var(--head-color);
+	margin-bottom: 0.5rem;
+}
+
+.experience-role {
+	font-weight: 500;
+	color: var(--txt-color);
+	opacity: 0.9;
+}
+
+.experience-dates {
+	font-size: 0.9rem;
+	color: var(--head-color);
+	margin-bottom: 1rem;
+}
+
+.experience-description p {
+	margin: 0;
+	text-indent: 0;
+	line-height: 1.6;
+}
+
+/* EDUCATION Section */
+
+.education-tasks {
+	font-size: 1.1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.education-tasks li {
+	position: relative;
+	padding-left: 1.5em;
+	margin-bottom: 0.5rem;
+	line-height: 1.6;
+}
+
+.education-tasks li::before {
+	content: '•';
+	color: var(--head-color);
+	position: absolute;
+	left: 0.5em;
+}
+
+.education-tasks li:last-child {
+	margin-bottom: 0;
+}
+
+/* ----------------------------Media Screen----------------- */
 
 @media screen and (max-width: 1024px) {
 	.skills-container {
-        gap: 1rem;
-    }
-    
-    .skill-item {
-        padding: 0.5rem 0.6rem;
-    }
+		gap: 1rem;
+	}
+
+	.skill-item {
+		padding: 0.5rem 0.6rem;
+	}
 }
 
 @media screen and (max-width: 768px) {
-	 .skills-container {
-        gap: 1rem;
-    }
-    
-    .skill-item {
-        padding: 0.4rem 0.6rem;
-    }
+	.skills-container {
+		gap: 1rem;
+	}
+
+	.skill-item {
+		padding: 0.4rem 0.6rem;
+	}
+	.experience-card {
+		padding: 1rem;
+	}
+
+	.education-tasks li {
+		padding-left: 1.2em;
+		font-size: 0.95rem;
+	}
 }
 
 @media screen and (max-width: 480px) {

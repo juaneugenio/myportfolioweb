@@ -1,7 +1,7 @@
 /** @format */
 const work = [
 	{
-		id: '05',
+		id: '01',
 		institution: 'parcelLab GmbH, München',
 		role: 'Junior Technical Support Engineer',
 		startDate: 'Sept. 2023',
@@ -16,10 +16,10 @@ const work = [
 		],
 	},
 	{
-		id: '04',
-		institution: 'Münchner Volkshochschule, München',
+		id: '02',
+		institution: 'Münchner Volkshochschule, Hochschule München, LMU München, Passau University.',
 		role: 'Spanish Teacher',
-		startDate: '2020',
+		startDate: 'Since 2008',
 		endDate: '2023',
 		taskTitle: 'Summary of responsabilities in each institution',
 		tasks: [
@@ -29,39 +29,12 @@ const work = [
 			'Participate in regular professional development to expand my pedagogical toolkit and incorporate new trends into language instruction.',
 		],
 	},
-	{
-		id: '03',
-		institution: 'Hochschule München, München',
-		role: 'Spanish Teacher',
-		startDate: '2018',
-		endDate: '2023',
-		taskTitle: '',
-		tasks: [],
-	},
-	{
-		id: '02',
-		institution: 'Ludwig-Maximilians-University, München',
-		role: 'Spanish Teacher',
-		startDate: '2017/06',
-		endDate: '2020/02',
-		taskTitle: '',
-		tasks: [],
-	},
-	{
-		id: '01',
-		institution: 'Passau University, Passau',
-		role: 'Spanish Teacher',
-		startDate: '2008/04',
-		endDate: '2016/07',
-		taskTitle: '',
-		tasks: [],
-	},
 ];
 const education = [
 	{
-		id: '04',
+		id: '01',
 		institution: 'IRONHACK Cooding School, Spain',
-		role: 'JavaScript Web Development MERN stack',
+		role: 'Fullstack Web Development MERN stack',
 		startDate: '2020/11',
 		endDate: '2021/03',
 		taskTitle: '',
@@ -81,7 +54,7 @@ const education = [
 		active: 'true',
 	},
 	{
-		id: '03',
+		id: '02',
 		institution: 'Bayerischer Volkshochschulverband e.V., Munich',
 		role: 'Eurolta instructor certificate ',
 		startDate: '2020/11',
@@ -96,7 +69,7 @@ const education = [
 		active: 'true',
 	},
 	{
-		id: '02',
+		id: '03',
 		institution: 'Technical University of Ambato, Ecuador',
 		role: 'Clinical Psychology Degree ',
 		startDate: '2000/09',
@@ -106,17 +79,17 @@ const education = [
 		tasks: ['Officially validated as B.A.+ Degree', 'German grade: 1.5', 'English grade: A-'],
 		active: 'true',
 	},
-	{
-		id: '01',
-		institution: "'Guayaquil' Technical High School, Ecuador",
-		role: 'Industrial Diploma in electronics',
-		startDate: '1989/07',
-		endDate: '1995/06',
-		taskTitle: '',
-		url: '',
-		tasks: [],
-		active: 'true',
-	},
+	// {
+	// 	id: '04',
+	// 	institution: "'Guayaquil' Technical High School, Ecuador",
+	// 	role: 'Industrial Diploma in electronics',
+	// 	startDate: '1989/07',
+	// 	endDate: '1995/06',
+	// 	taskTitle: '',
+	// 	url: '',
+	// 	tasks: [],
+	// 	active: 'true',
+	// },
 ];
 const skills = {
 	frontend: [

@@ -34,7 +34,6 @@ function About({ variants }) {
 	};
 
 	const iconComponents = {
-		ImHtmlFive: <ImHtmlFive />,
 		ImHtmlFive: ImHtmlFive,
 		ImCss3: ImCss3,
 		IoLogoJavascript: IoLogoJavascript,
@@ -112,7 +111,8 @@ function About({ variants }) {
 												}}
 											>
 												{IconComponent && <IconComponent className='skill-icon' />}
-												<span className='skill-name'>{skill.name}</span><span className='skill-stars'>{skill.level}</span>
+												<span className='skill-name'>{skill.name}</span>
+												<span className='skill-stars'>{skill.level}</span>
 											</motion.div>
 										);
 									})}
@@ -125,40 +125,77 @@ function About({ variants }) {
 
 			<h3>Work experience</h3>
 
-			{/* <Timeline lang='en' theme={customTheme} dateFormat='only-number' collapse withoutDay>
-				{work.map((institut) => {
-					return (
-						<Events
-							title={institut.institution}
-							subtitle={institut.role.toUpperCase()}
-							startDate={institut.startDate}
-							endDate={institut.endDate}
-							// defaultClosed
-							key={institut.id}
+			<motion.section variants={variants} initial='hidden' animate='enter' exit='exit' transition={{ duration: 0.4 }}>
+				<div className='experience-section'>
+					{work.map((job, index) => (
+						<motion.div
+							key={job.id}
+							className='experience-card'
+							initial={{ opacity: 0, x: -20 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{
+								duration: 0.3,
+								delay: index * 0.2,
+								ease: 'easeOut',
+							}}
 						>
-							<Event title={institut.taskTitle} description={institut.tasks} />
-						</Events>
-					);
-				})}
-			</Timeline>
+							<div className='experience-header'>
+								<h4>{job.institution}</h4>
+								<span className='experience-role'>{job.role}</span>
+							</div>
+							<div className='experience-dates'>
+								<span>
+									{job.startDate} - {job.endDate}
+								</span>
+							</div>
+							<div className='experience-description'>
+								<ul className="education-tasks">
+									{job.tasks.map((task, taskIndex) => (
+										<li key={taskIndex}>{task}</li>
+									))}
+								</ul>
+							</div>
+						</motion.div>
+					))}
+				</div>
+			</motion.section>
+
 			<h3>Education & Certifications</h3>
 
-			<Timeline lang='en' theme={customTheme} dateFormat='only-number' collapse withoutDay>
-				{education.map((institut) => {
-					return (
-						<Events
-							title={institut.institution}
-							subtitle={institut.role.toUpperCase()}
-							startDate={institut.startDate}
-							endDate={institut.endDate}
-							// defaultClosed
-							key={institut.id}
+			<motion.section variants={variants} initial='hidden' animate='enter' exit='exit' transition={{ duration: 0.4 }}>
+				<div className='experience-section'>
+					{education.map((edu, index) => (
+						<motion.div
+							key={edu.id}
+							className='experience-card'
+							initial={{ opacity: 0, x: -20 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{
+								duration: 0.3,
+								delay: index * 0.2,
+								ease: 'easeOut',
+							}}
 						>
-							<Event title={institut.taskTitle} description={institut.tasks} />
-						</Events>
-					);
-				})}
-			</Timeline> */}
+							<div className='experience-header'>
+								<h4>{edu.institution}</h4>
+								<span className='experience-role'>{edu.role}</span>
+							</div>
+							<div className='experience-dates'>
+								<span>
+									{edu.startDate} - {edu.endDate}
+								</span>
+							</div>
+							<div className='experience-description'>
+								<ul className='education-tasks'>
+									{edu.tasks.map((task, taskIndex) => (
+										<li key={taskIndex}>{task}</li>
+									))}
+								</ul>
+							</div>
+						</motion.div>
+					))}
+				</div>
+			</motion.section>
 		</motion.section>
 	);
 }
