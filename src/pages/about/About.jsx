@@ -17,6 +17,7 @@ import {
 	SiRedux,
 	SiSketch,
 	SiVisualstudiocode,
+	SiJson,
 } from 'react-icons/si';
 import { VscEditorLayout } from 'react-icons/vsc';
 
@@ -49,6 +50,7 @@ function About({ variants }) {
 		VscEditorLayout: VscEditorLayout,
 		SiSketch: SiSketch,
 		SiVisualstudiocode: SiVisualstudiocode,
+		SiJson: SiJson,
 	};
 
 	return (

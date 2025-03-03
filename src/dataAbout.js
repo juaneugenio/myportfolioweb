@@ -183,6 +183,12 @@ const skills = {
 			icon: 'SiMongodb',
 			level: '★★☆☆☆',
 		},
+		{
+			id: '04',
+			name: 'JSON',
+			icon: 'SiJson',
+			level: '★★★★☆',
+		},
 	],
 	tools: [
 		{
