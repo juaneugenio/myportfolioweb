@@ -1,122 +1,171 @@
 {
-	"user": {
-		"firstName": "Juan",
-		"lastName": "Eugenio",
-		"birthday": "Fri, 24 Jun 1977 00:00:00 UTC",
-		"contacts": [
-			{
-				"id": "01",
-				"name": "LinkedIn",
-				"url": "https://www.linkedin.com/in/eugeniojuan/",
-				"icon": "ImLinkedin"
-			},
-			{
-				"id": "02",
-				"name": "jc.eugenio@proton.me",
-				"url": "mailto:jc.eugenio@proton.me",
-				"icon": "ImMail4"
-			},
-			{
-				"id": "03",
-				"name": "Github",
-				"url": "https://github.com/juaneugenio",
-				"icon": "ImGithub"
-			}
-		],
-		"projects": [
-			{
-				"id": "06",
-				"name": "Favorite Recipes",
-				"type": "Frontend",
-				"img": "src/assets/profile-pic.png",
-				"year": "2024",
-				"devs": ["eugenio"],
-				"url": "https://juaneugenio.github.io/favorite-recipes/",
-				"githubUrl": "https://github.com/juaneugenio/favorite-recipes",
-				"description": "This project is a frontendweb application about favorite recipes worldwide. It allows users to mark recipes as favorites, show a filtered list of favorite recipes. It is built with React, Pure CSS, and JavaScript, and uses React router Dom to navigate to the Recipe Page. The app is responsive and optimized for mobile devices.",
-				"techs": ["CSS3", "HTML5", "Javascript", "React", "React Router", "Responsive Design", "Vite", "pnpm"]
-			},
-			{
-				"id": "05",
-				"name": "Social Web Clone",
-				"type": "Frontend",
-				"img": "src/assets/profile-pic.png",
-				"year": "2024",
-				"devs": ["eugenio"],
-				"url": "https://juaneugenio.github.io/social-app-clone/index.html",
-				"githubUrl": "https://github.com/juaneugenio/social-app-clone",
-				"description": "This Social App Clone is a project designed to showcase my frontend development skills using HTML, CSS, and JavaScript. This Web App simulates a social media application and serves as a practical demonstration of my abilities in creating responsive web designs.",
-				"techs": ["CSS3", "HTML5", "Javascript", "DOM-Manipulation", "Responsive Design", "Vite", "pnpm"]
-			},
-			{
-				"id": "04",
-				"name": "Random Quotes",
-				"type": "Frontend",
-				"img": "src/assets/profile-pic.png",
-				"year": "2024",
-				"devs": ["eugenio"],
-				"url": "https://juaneugenio.github.io/random-quote-card/",
-				"githubUrl": "https://github.com/juaneugenio/random-quote-card",
-				"description": "This is web application generates random quotes along with a dynamic background color that moves constantly. It uses an API from a JSON file to fetch quotes and each interaction triggers a change in the background and button colors, creating an engaging and visually appealing experience.",
-				"techs": [
-					"ReactJS",
-					"React Router",
-					"CSS3",
-					"HTML5",
-					"Fetch API",
-					"PropTypes",
-					"Responsive Design",
-					"Vite",
-					"pnpm"
-				]
-			},
-			{
-				"id": "03",
-				"name": "Plant's Blog",
-				"type": "Fullstack MERN",
-				"img": "src/assets/profile-pic.png",
-				"year": "2023",
-				"devs": ["eugenio"],
-				"url": "https://blanty.netlify.app/",
-				"githubUrl": "https://github.com/juaneugenio/plant-bloggin-app",
-				"description": "This full-stack MERN application is a plant blog that allows users to perform CRUD operations to create user accounts and share photos and post information about plants. It is designed with an eﬃcient MVC architecture and features a responsive user interface. It is deployed on Render, Netlify and Cloudinary.",
-				"techs": [
-					"ReactJS",
-					"JavaScript",
-					"React Router",
-					"CSS3",
-					"HTML5",
-					"MongoDB",
-					"ExpressJS",
-					"Axios",
-					"NodeJS",
-					"Responsive Design"
-				]
-			},
-			{
-				"id": "02",
-				"name": "Sky Diver Game",
-				"type": "Javascript OOP",
-				"img": "src/assets/profile-pic.png",
-				"year": "2023",
-				"devs": ["eugenio"],
-				"url": "https://juaneugenio.github.io/Infinite-Skydiver-Game/",
-				"githubUrl": "https://github.com/juaneugenio/Infinite-Skydiver-Game",
-				"description": "An Arcade-style game developed with JavaScript and p5.js. The goal is to control a sky diver pilot to dodge obstacles and score 100 points, while increasing diﬃculty. Main functionalities are: User controls, graphics rendering, event handling, animations, scoring and gameplay systems.",
-				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design", "Objec-Oriented Programming"]
-			},
-			{
-				"id": "01",
-				"name": "Cluedo Game",
-				"type": "Javascript OOP",
-				"img": "src/assets/profile-pic.png",
-				"year": "2023",
-				"devs": ["eugenio"],
-				"url": "https://cluedojs-play.netlify.app/",
-				"githubUrl": "https://github.com/juaneugenio/cluedo-Game-js",
-				"description": "Cluedo Game is a web version of the classic detective board game Cluedo in which players try to ﬁnd out who committed the murder, with what weapon and in which room. The game implements a responsive single-page application with an intuitive and eﬀective user interface.",
-				"techs": ["DOM Manipulation", "JavaScript", "CSS3", "HTML5", "Responsive Design", "Objec-Oriented Programming"]
-			}
-		]
-	}
+  "user": {
+    "firstName": "Juan",
+    "lastName": "Eugenio",
+    "birthday": "Fri, 24 Jun 1977 00:00:00 UTC",
+    "contacts": [
+      {
+        "id": "01",
+        "name": "To LinkedIn",
+        "url": "https://www.linkedin.com/in/eugeniojuan/",
+        "icon": "ImLinkedin"
+      },
+      {
+        "id": "02",
+        "name": "jc.eugenio@proton.me",
+        "url": "mailto:jc.eugenio@proton.me",
+        "icon": "ImMail4"
+      },
+      {
+        "id": "03",
+        "name": "To Github",
+        "url": "https://github.com/juaneugenio",
+        "icon": "ImGithub"
+      },
+      {
+        "id": "04",
+        "name": "CV Download",
+        "url": "https://drive.google.com/uc?export=download&id=1shTJzccpgUADOY9bFJiQK_jQuCNW-5ig",
+        "icon": "ImFileText"
+      }
+    ],
+    "projects": [
+      {
+        "id": "06",
+        "name": "Favorite Recipes",
+        "type": "Frontend",
+        "img": "src/assets/profile-pic.png",
+        "year": "2024",
+        "devs": [
+          "eugenio"
+        ],
+        "url": "https://juaneugenio.github.io/favorite-recipes/",
+        "githubUrl": "https://github.com/juaneugenio/favorite-recipes",
+        "description": "This project is a frontendweb application about favorite recipes worldwide. It allows users to mark recipes as favorites, show a filtered list of favorite recipes. It is built with React, Pure CSS, and JavaScript, and uses React router Dom to navigate to the Recipe Page. The app is responsive and optimized for mobile devices.",
+        "techs": [
+          "CSS3",
+          "HTML5",
+          "Javascript",
+          "React",
+          "React Router",
+          "Responsive Design",
+          "Vite",
+          "pnpm"
+        ]
+      },
+      {
+        "id": "05",
+        "name": "Social Web Clone",
+        "type": "Frontend",
+        "img": "src/assets/profile-pic.png",
+        "year": "2024",
+        "devs": [
+          "eugenio"
+        ],
+        "url": "https://juaneugenio.github.io/social-app-clone/index.html",
+        "githubUrl": "https://github.com/juaneugenio/social-app-clone",
+        "description": "This Social App Clone is a project designed to showcase my frontend development skills using HTML, CSS, and JavaScript. This Web App simulates a social media application and serves as a practical demonstration of my abilities in creating responsive web designs.",
+        "techs": [
+          "CSS3",
+          "HTML5",
+          "Javascript",
+          "DOM-Manipulation",
+          "Responsive Design",
+          "Vite",
+          "pnpm"
+        ]
+      },
+      {
+        "id": "04",
+        "name": "Random Quotes",
+        "type": "Frontend",
+        "img": "src/assets/profile-pic.png",
+        "year": "2024",
+        "devs": [
+          "eugenio"
+        ],
+        "url": "https://juaneugenio.github.io/random-quote-card/",
+        "githubUrl": "https://github.com/juaneugenio/random-quote-card",
+        "description": "This is web application generates random quotes along with a dynamic background color that moves constantly. It uses an API from a JSON file to fetch quotes and each interaction triggers a change in the background and button colors, creating an engaging and visually appealing experience.",
+        "techs": [
+          "ReactJS",
+          "React Router",
+          "CSS3",
+          "HTML5",
+          "Fetch API",
+          "PropTypes",
+          "Responsive Design",
+          "Vite",
+          "pnpm"
+        ]
+      },
+      {
+        "id": "03",
+        "name": "Plant's Blog",
+        "type": "Fullstack MERN",
+        "img": "src/assets/profile-pic.png",
+        "year": "2023",
+        "devs": [
+          "eugenio"
+        ],
+        "url": "https://blanty.netlify.app/",
+        "githubUrl": "https://github.com/juaneugenio/plant-bloggin-app",
+        "description": "This full-stack MERN application is a plant blog that allows users to perform CRUD operations to create user accounts and share photos and post information about plants. It is designed with an eﬃcient MVC architecture and features a responsive user interface. It is deployed on Render, Netlify and Cloudinary.",
+        "techs": [
+          "ReactJS",
+          "JavaScript",
+          "React Router",
+          "CSS3",
+          "HTML5",
+          "MongoDB",
+          "ExpressJS",
+          "Axios",
+          "NodeJS",
+          "Responsive Design"
+        ]
+      },
+      {
+        "id": "02",
+        "name": "Sky Diver Game",
+        "type": "Javascript OOP",
+        "img": "src/assets/profile-pic.png",
+        "year": "2023",
+        "devs": [
+          "eugenio"
+        ],
+        "url": "https://juaneugenio.github.io/Infinite-Skydiver-Game/",
+        "githubUrl": "https://github.com/juaneugenio/Infinite-Skydiver-Game",
+        "description": "An Arcade-style game developed with JavaScript and p5.js. The goal is to control a sky diver pilot to dodge obstacles and score 100 points, while increasing diﬃculty. Main functionalities are: User controls, graphics rendering, event handling, animations, scoring and gameplay systems.",
+        "techs": [
+          "DOM Manipulation",
+          "JavaScript",
+          "CSS3",
+          "HTML5",
+          "Responsive Design",
+          "Objec-Oriented Programming"
+        ]
+      },
+      {
+        "id": "01",
+        "name": "Cluedo Game",
+        "type": "Javascript OOP",
+        "img": "src/assets/profile-pic.png",
+        "year": "2023",
+        "devs": [
+          "eugenio"
+        ],
+        "url": "https://cluedojs-play.netlify.app/",
+        "githubUrl": "https://github.com/juaneugenio/cluedo-Game-js",
+        "description": "Cluedo Game is a web version of the classic detective board game Cluedo in which players try to ﬁnd out who committed the murder, with what weapon and in which room. The game implements a responsive single-page application with an intuitive and eﬀective user interface.",
+        "techs": [
+          "DOM Manipulation",
+          "JavaScript",
+          "CSS3",
+          "HTML5",
+          "Responsive Design",
+          "Objec-Oriented Programming"
+        ]
+      }
+    ]
+  }
 }
