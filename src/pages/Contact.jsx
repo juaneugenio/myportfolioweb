@@ -21,7 +21,7 @@ function Contact({variants}) {
        <div className="contact-container">
          <div className="contact-header">
            <p>
-             Thanks for exploring my portfolio! I'm <strong>Juan Carlos</strong>, and I'd love to hear from you.
+             I'm <strong>Juan Carlos</strong>, and thanks you for exploring my portfolio!
            </p>
            <p>
              If you have any
