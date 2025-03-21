@@ -1,5 +1,5 @@
 /** @format */
-
+import { updateCursorPosition } from '../../utils/cursorShape';
 import React, { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import './HamburgerMenu.css';
@@ -14,7 +14,8 @@ const HamburgerMenu = ({ children }) => {
 		};
 	}, [isOpen]);
 
-	const toggleMenu = () => {
+	const toggleMenu = (e) => {
+		updateCursorPosition(e);
 		setIsOpen(!isOpen);
 	};
 
@@ -34,9 +35,10 @@ const HamburgerMenu = ({ children }) => {
 	return (
 		<>
 			<button
-				className={`hamburger-btn ${isOpen ? 'active' : ''}`}
+				className={`hamburger-btn hoverable ${isOpen ? 'active' : ''}` }
 				onClick={toggleMenu}
 				aria-label='Toggle menu'
+				onMouseMove={(e) => updateCursorPosition(e)}
 			>
 				{isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
 			</button>

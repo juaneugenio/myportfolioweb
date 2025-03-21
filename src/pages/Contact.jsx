@@ -40,7 +40,7 @@ function Contact({variants}) {
                        whileTap={{scale: 0.9}}
                        transition={{type: "spring", stiffness: 500, damping: 5}}
                     >
-                      <a className="linkedin" href={contact.url} download target="_blank" rel="noopener noreferrer">
+                      <a className="linkedin hoverable" href={contact.url} download target="_blank" rel="noopener noreferrer">
                         <ImLinkedin/> <br/>
                         <span>{contact.name}</span>
                       </a>
@@ -55,7 +55,7 @@ function Contact({variants}) {
                        whileTap={{scale: 0.9}}
                        transition={{type: "spring", stiffness: 500, damping: 5}}
                     >
-                      <a className="gmail" href={contact.url} rel="noopener noreferrer">
+                      <a className="proton hoverable" href={contact.url} rel="noopener noreferrer">
                         <ImMail4/>
                         <br/>
                         <span>{contact.name}</span>
@@ -71,7 +71,7 @@ function Contact({variants}) {
                        whileTap={{scale: 0.9}}
                        transition={{type: "spring", stiffness: 500, damping: 5}}
                     >
-                      <a className="github" href={contact.url} target="_blank" rel="noopener noreferrer">
+                      <a className="github hoverable" href={contact.url} target="_blank" rel="noopener noreferrer">
                         <ImGithub/>
                         <br/>
                         <span>{contact.name}</span>
@@ -87,7 +87,7 @@ function Contact({variants}) {
                        whileTap={{scale: 0.9}}
                        transition={{type: "spring", stiffness: 500, damping: 5}}
                     >
-                      <a className="linkedin" href={contact.url} target="_blank" rel="noopener noreferrer">
+                      <a className="linkedin hoverable" href={contact.url} target="_blank" rel="noopener noreferrer">
                         <ImFileText/> <br/>
                         <span>{contact.name}</span>
                       </a>

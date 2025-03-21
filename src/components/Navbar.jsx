@@ -30,7 +30,7 @@ function Navbar() {
 				<NavLink
 					key={item.path}
 					to={item.path}
-					className='menulink'
+					className='menulink hoverable'
 					onMouseEnter={handleMouseEnter}
 					data-text={item.name}
 				>
@@ -43,12 +43,12 @@ function Navbar() {
 
 	return (
 		<>
-			<div className='sidebar desktop-menu'>
-				<nav className='menubar'>
+			<div className='sidebar desktop-menu hoverable'>
+				<nav className='menubar hoverable'>
 					<NavContent />
 				</nav>
 			</div>
-			<div className='mobile-nav'>
+			<div className='mobile-nav hoverable'>
 				<HamburgerMenu>
 					<NavContent />
 				</HamburgerMenu>
