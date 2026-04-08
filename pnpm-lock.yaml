@@ -2056,10 +2056,6 @@ packages:
     peerDependencies:
       react: '>=16.8'
 
-  vary@1.1.2:
-    resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
-    engines: {node: '>= 0.8'}
-
   vertical-timeline-component-react@4.4.1:
     resolution: {integrity: sha512-pnSl0oPenWTsVnSUSExLzRYbEtHVuWo38PF+R/VNsrHzoZBYMWv0497c1+oUTmJ2wrHKkvnpc7DleedqIMYd4Q==}
 
