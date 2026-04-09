@@ -7,6 +7,13 @@ import data from "../data.json";
 
 import { ImGithub, ImMail4, ImLinkedin, ImFileText } from "react-icons/im";
 
+const iconMap = {
+  ImLinkedin: ImLinkedin,
+  ImMail4: ImMail4,
+  ImGithub: ImGithub,
+  ImFileText: ImFileText,
+};
+
 function Contact({ variants }) {
   const year = new Date().getFullYear();
   return (
@@ -32,88 +39,30 @@ function Contact({ variants }) {
 
         <ul>
           {data.user.contacts.map((contact) => {
-            switch (contact.icon) {
-              case "ImLinkedin":
-                return (
-                  <motion.li
-                    key={contact.id}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 500, damping: 5 }}
-                  >
-                    <a
-                      className="linkedin hoverable"
-                      href={contact.url}
-                      download
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ImLinkedin /> <br />
-                      <span>{contact.name}</span>
-                    </a>
-                  </motion.li>
-                );
-              case "ImMail4":
-                return (
-                  <motion.li
-                    key={contact.id}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 500, damping: 5 }}
-                  >
-                    <a
-                      className="proton hoverable"
-                      href={contact.url}
-                      rel="noopener noreferrer"
-                    >
-                      <ImMail4 />
-                      <br />
-                      <span>{contact.name}</span>
-                    </a>
-                  </motion.li>
-                );
-              case "ImGithub":
-                return (
-                  <motion.li
-                    key={contact.id}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 500, damping: 5 }}
-                  >
-                    <a
-                      className="github hoverable"
-                      href={contact.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ImGithub />
-                      <br />
-                      <span>{contact.name}</span>
-                    </a>
-                  </motion.li>
-                );
-              case "ImFileText":
-                return (
-                  <motion.li
-                    key={contact.id}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 500, damping: 5 }}
-                  >
-                    <a
-                      className="linkedin hoverable"
-                      href={contact.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ImFileText /> <br />
-                      <span>{contact.name}</span>
-                    </a>
-                  </motion.li>
-                );
+            // Iteramos sobre los contactos
+            const IconComponent = iconMap[contact.icon]; // Obtenemos el componente de icono del mapa
+            const className = contact.icon.replace(/^Im/, "").toLowerCase(); // Generamos un className dinámico (ej: "linkedin", "mail4")
 
-              default:
-            }
+            return (
+              <motion.li
+                key={contact.id}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 500, damping: 5 }}
+              >
+                <a
+                  className={`${className} hoverable`} // Usamos el className dinámico
+                  href={contact.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  {...(contact.icon === "ImFileText" && { download: true })} // Añadimos 'download' solo si es ImFileText
+                >
+                  {IconComponent && <IconComponent />} <br />{" "}
+                  {/* Renderizamos el componente de icono */}
+                  <span>{contact.name}</span>
+                </a>
+              </motion.li>
+            );
           })}
         </ul>
         <div className="footer">
