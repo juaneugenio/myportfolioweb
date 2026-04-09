@@ -21,17 +21,6 @@ import {
 import { VscEditorLayout } from "react-icons/vsc";
 
 function About({ variants }) {
-  // const customTheme = {
-  //   borderDotColor: "#fd7e14",
-  //   descriptionColor: "#F7F7F2",
-  //   dotColor: "#30292f",
-  //   eventColor: "#E4E6C3",
-  //   lineColor: "#fd7e14",
-  //   subtitleColor: "#C5D86D",
-  //   titleColor: "#E4E6C3",
-  //   yearColor: "#C5D86D",
-  // };
-
   const iconComponents = {
     ImHtmlFive: ImHtmlFive,
     ImCss3: ImCss3,

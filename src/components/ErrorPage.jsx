@@ -33,7 +33,7 @@ const ErrorPage = () => {
       >
         <i>{error.statusText || error.message}</i>
       </p>
-      {error.stack && process.env.NODE_ENV === "development" && (
+      {error.stack && import.meta.env.DEV && (
         <pre
           style={{
             textAlign: "left",
