@@ -22,22 +22,22 @@ import { VscEditorLayout } from "react-icons/vsc";
 
 function About({ variants }) {
   const iconComponents = {
-    ImHtmlFive: ImHtmlFive,
-    ImCss3: ImCss3,
-    IoLogoJavascript: IoLogoJavascript,
-    IoLogoNodejs: IoLogoNodejs,
-    SiTypescript: SiTypescript,
-    SiReact: SiReact,
-    SiGit: SiGit,
-    SiGithub: SiGithub,
-    SiPnpm: SiPnpm,
-    SiExpress: SiExpress,
-    SiMongodb: SiMongodb,
-    SiRedux: SiRedux,
-    VscEditorLayout: VscEditorLayout,
-    SiSketch: SiSketch,
-    SiVisualstudiocode: SiVisualstudiocode,
-    SiJson: SiJson,
+    ImHtmlFive,
+    ImCss3,
+    IoLogoJavascript,
+    IoLogoNodejs,
+    SiTypescript,
+    SiReact,
+    SiGit,
+    SiGithub,
+    SiPnpm,
+    SiExpress,
+    SiMongodb,
+    SiRedux,
+    VscEditorLayout,
+    SiSketch,
+    SiVisualstudiocode,
+    SiJson,
   };
 
   return (

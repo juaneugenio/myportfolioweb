@@ -113,7 +113,6 @@ function Contact({ variants }) {
                 );
 
               default:
-                break;
             }
           })}
         </ul>
